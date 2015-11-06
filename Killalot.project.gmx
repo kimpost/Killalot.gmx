@@ -10,7 +10,11 @@
   <paths name="paths"/>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
+<<<<<<< HEAD
     <room>rooms\room2</room>
+=======
+    <room>rooms\room1</room>
+>>>>>>> origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
