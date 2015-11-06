@@ -10,7 +10,6 @@
   <paths name="paths"/>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
-    <room>rooms\room1</room>
     <room>rooms\room2</room>
   </rooms>
   <help>
