@@ -7,9 +7,14 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_sprite</sprite>
+    <sprite>sprites\spr_knigt</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
+  <objects name="objects">
+    <object>objects\obj_knigt</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
   </rooms>
