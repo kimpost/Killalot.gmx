@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>direction = 0
-speed = 1.5
+speed = 8
 </string>
           </argument>
         </arguments>
@@ -49,7 +49,23 @@ speed = 1.5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>///movement
+if x &gt;= (room_width+100)
+    {
+    image_xscale = -1
+    direction = 180
+    speed = speed + 0.4
+    y = y +30
+    }
+    
+if x &lt;= -100
+    {
+    image_xscale = 1
+    direction = 0
+    speed = speed + 0.4
+    y = y +30
+    }
+</string>
           </argument>
         </arguments>
       </action>
