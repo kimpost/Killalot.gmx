@@ -6,14 +6,19 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_sprite</sprite>
+    <sprite>sprites\spr_dragon</sprite>
     <sprite>sprites\spr_knigt</sprite>
+    <sprite>sprites\spr_jord</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_knigt</object>
+    <object>objects\obj_dragon</object>
+    <object>objects\obj_jord</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
