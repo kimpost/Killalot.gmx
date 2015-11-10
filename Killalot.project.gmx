@@ -29,12 +29,9 @@
     <object>objects\obj_flyingarrow</object>
     <object>objects\obj_orc</object>
     <object>objects\obj_flame</object>
-<<<<<<< HEAD
     <object>objects\obj_ballista</object>
     <object>objects\obj_debug</object>
-=======
     <object>objects\obj_knightdeath</object>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
