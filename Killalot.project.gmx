@@ -15,6 +15,9 @@
     <sprite>sprites\spr_orc</sprite>
     <sprite>sprites\spr_flame</sprite>
     <sprite>sprites\spr_ballista</sprite>
+    <sprite>sprites\spr_gold</sprite>
+    <sprite>sprites\spr_knightattack</sprite>
+    <sprite>sprites\spr_knightattackanimation</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
