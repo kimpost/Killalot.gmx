@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_enemyparent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction = 0
+            <string>hp = 1
+
+direction = 0
 speed = 10
 
 </string>
@@ -50,7 +52,9 @@ speed = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movement
+            <string>event_inherited()
+
+///movement
 if x &gt;= (room_width+100)
     {
     image_xscale = -1

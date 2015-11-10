@@ -32,6 +32,7 @@
     <object>objects\obj_ballista</object>
     <object>objects\obj_debug</object>
     <object>objects\obj_knightdeath</object>
+    <object>objects\obj_enemyparent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
