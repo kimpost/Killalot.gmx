@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>walkspeed = 3
+            <string>canattack = true
+
+imagexscale = 1
+
+walkspeed = 3
 </string>
           </argument>
         </arguments>
@@ -55,6 +59,30 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>canattack = true
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -76,23 +104,42 @@
 /*
 Den her plads er til problemkoder og bliver ikke læst
 */
+attack = keyboard_check(vk_space)
 moveleft = keyboard_check(vk_left)
 moveright = keyboard_check(vk_right)
 
 if moveleft
     {
+    imagexscale = -1
     x -= walkspeed
-    image_xscale = -1
+    image_xscale = imagexscale
     }
     
 if moveright
     {
+    imagexscale = 1
     x += walkspeed
-    image_xscale = 1
+    image_xscale = imagexscale
     }
     
 x = min(x,room_width-16)
 x = max(x,16)
+
+if attack &amp;&amp; canattack = true
+    {
+    sprite_index = spr_knightattack
+    image_speed = 0.5
+    alarm[0] = 10
+    canattack = false
+    var animation;
+    animation = instance_create(x,y,obj_knightattackanimation)
+    animation.imagexscale = imagexscale
+    }
+
+if sprite_index = spr_knightattack &amp;&amp; image_index &gt;=3
+    {
+    sprite_index = spr_knigt
+    }
 
 </string>
           </argument>

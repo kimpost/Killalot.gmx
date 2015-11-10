@@ -8,6 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_dragon</sprite>
     <sprite>sprites\spr_knigt</sprite>
+    <sprite>sprites\spr_knightattack</sprite>
+    <sprite>sprites\spr_knightattackanimation</sprite>
     <sprite>sprites\spr_knigtdeath</sprite>
     <sprite>sprites\spr_jord</sprite>
     <sprite>sprites\spr_castle</sprite>
@@ -33,6 +35,7 @@
     <object>objects\obj_debug</object>
     <object>objects\obj_knightdeath</object>
     <object>objects\obj_enemyparent</object>
+    <object>objects\obj_knightattackanimation</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
