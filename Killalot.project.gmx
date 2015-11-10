@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_dragon</sprite>
     <sprite>sprites\spr_knigt</sprite>
+    <sprite>sprites\spr_knigtdeath</sprite>
     <sprite>sprites\spr_jord</sprite>
     <sprite>sprites\spr_castle</sprite>
     <sprite>sprites\spr_arrow</sprite>
@@ -28,8 +29,12 @@
     <object>objects\obj_flyingarrow</object>
     <object>objects\obj_orc</object>
     <object>objects\obj_flame</object>
+<<<<<<< HEAD
     <object>objects\obj_ballista</object>
     <object>objects\obj_debug</object>
+=======
+    <object>objects\obj_knightdeath</object>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
