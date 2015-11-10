@@ -36,12 +36,9 @@
     <object>objects\obj_debug</object>
     <object>objects\obj_knightdeath</object>
     <object>objects\obj_enemyparent</object>
-<<<<<<< HEAD
     <object>objects\obj_spawnpointleft</object>
-=======
     <object>objects\obj_knightattackanimation</object>
     <object>objects\obj_gold</object>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
