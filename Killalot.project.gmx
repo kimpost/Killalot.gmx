@@ -8,8 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_dragon</sprite>
     <sprite>sprites\spr_knigt</sprite>
-    <sprite>sprites\spr_knightattack</sprite>
-    <sprite>sprites\spr_knightattackanimation</sprite>
     <sprite>sprites\spr_knigtdeath</sprite>
     <sprite>sprites\spr_jord</sprite>
     <sprite>sprites\spr_castle</sprite>
@@ -17,7 +15,6 @@
     <sprite>sprites\spr_orc</sprite>
     <sprite>sprites\spr_flame</sprite>
     <sprite>sprites\spr_ballista</sprite>
-    <sprite>sprites\spr_gold</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -36,12 +33,7 @@
     <object>objects\obj_debug</object>
     <object>objects\obj_knightdeath</object>
     <object>objects\obj_enemyparent</object>
-<<<<<<< HEAD
     <object>objects\obj_spawnpointleft</object>
-=======
-    <object>objects\obj_knightattackanimation</object>
-    <object>objects\obj_gold</object>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
