@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>arrow = true
+            <string>globalvar arrow;
+arrow = true;
 </string>
           </argument>
         </arguments>

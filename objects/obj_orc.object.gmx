@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 1
+            <string>hp = 3
 
 speed = 0.4
 
