@@ -11,6 +11,8 @@
     <sprite>sprites\spr_jord</sprite>
     <sprite>sprites\spr_castle</sprite>
     <sprite>sprites\spr_arrow</sprite>
+    <sprite>sprites\spr_orc</sprite>
+    <sprite>sprites\spr_flame</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -22,6 +24,8 @@
     <object>objects\obj_jord</object>
     <object>objects\obj_castle</object>
     <object>objects\obj_arrow</object>
+    <object>objects\obj_orc</object>
+    <object>objects\obj_flame</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
