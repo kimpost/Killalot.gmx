@@ -13,6 +13,7 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_orc</sprite>
     <sprite>sprites\spr_flame</sprite>
+    <sprite>sprites\spr_ballista</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -24,8 +25,11 @@
     <object>objects\obj_jord</object>
     <object>objects\obj_castle</object>
     <object>objects\obj_arrow</object>
+    <object>objects\obj_flyingarrow</object>
     <object>objects\obj_orc</object>
     <object>objects\obj_flame</object>
+    <object>objects\obj_ballista</object>
+    <object>objects\obj_debug</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
