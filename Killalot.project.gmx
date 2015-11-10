@@ -17,6 +17,7 @@
     <sprite>sprites\spr_orc</sprite>
     <sprite>sprites\spr_flame</sprite>
     <sprite>sprites\spr_ballista</sprite>
+    <sprite>sprites\spr_gold</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -36,6 +37,7 @@
     <object>objects\obj_knightdeath</object>
     <object>objects\obj_enemyparent</object>
     <object>objects\obj_knightattackanimation</object>
+    <object>objects\obj_gold</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>

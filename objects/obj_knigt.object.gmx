@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>canattack = true
+            <string>//do I have an arrow to load in the ballista?
+havearrow = false
+
+//can I attack?
+canattack = true
 
 imagexscale = 1
 
@@ -141,6 +145,40 @@ if sprite_index = spr_knightattack &amp;&amp; image_index &gt;=3
     sprite_index = spr_knigt
     }
 
+if havearrow = true &amp;&amp; distance_to_object(obj_ballista) &lt; 10 &amp;&amp; global.arrow = false
+{havearrow = false
+global.arrow = true
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_arrow">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if havearrow = false
+    {
+    havearrow = true
+    with (other)
+        {
+        instance_destroy()
+        }
+    }
 </string>
           </argument>
         </arguments>
