@@ -49,11 +49,21 @@ candamage = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_knigt.x
+            <string>if instance_exists(obj_knigt)
+    {
+    x = obj_knigt.x
+    }
+    else
+    {
+    x = obj_knightdeath.x
+    }
 
 image_xscale = imagexscale
+
 if image_index &gt;= 4
-{instance_destroy()}
+    {
+    instance_destroy()
+    }
 </string>
           </argument>
         </arguments>
