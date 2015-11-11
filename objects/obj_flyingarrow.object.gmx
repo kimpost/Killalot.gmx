@@ -120,7 +120,7 @@ if y &gt;= 630
             <string>if candamageenemy = true &amp;&amp; flying = true
 {other.hp -= 1
 alarm[0] = 60
-candamagedragon = false}
+candamageenemy = false}
 </string>
           </argument>
         </arguments>

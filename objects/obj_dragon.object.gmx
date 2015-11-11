@@ -25,10 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 10
+            <string>hp = 2
 
 direction = 0
-speed = 1.5
+speed = 2
 
 </string>
           </argument>
@@ -88,7 +88,6 @@ if x &lt;= -100
     instance_destroy()
     } 
 
-   
 
 
 
