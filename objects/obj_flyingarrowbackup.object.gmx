@@ -28,15 +28,15 @@
             <string>//Can i damage the enemy?
 candamageenemy = true
 flying = true
-//dir = 0
+
 
 arrowgravity = 0.2 
-arrowspeed = 15
+
 
 //Sets the direction and so forth
-mydirection = point_direction(x,y,mouse_x,mouse_y)
-direction = mydirection
-speed = arrowspeed
+
+direction = noone
+speed = noone
 gravity = arrowgravity
 
 

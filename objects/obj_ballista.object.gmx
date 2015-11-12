@@ -27,6 +27,42 @@
             <kind>1</kind>
             <string>globalvar arrow;
 arrow = true;
+
+
+//test variables below
+makepointer = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>makepointer = true
+if instance_exists(obj_ballistamouseshooter)
+{with (obj_ballistamouseshooter)
+{instance_destroy()}}
+
+/*if arrow = true
+    {
+    instance_create(x,y,obj_flyingarrow)
+    arrow = false
+    }
 </string>
           </argument>
         </arguments>
@@ -49,7 +85,7 @@ arrow = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if arrow = true
+            <string>/*if arrow = true
     {
     instance_create(x,y,obj_flyingarrow)
     arrow = false
@@ -77,12 +113,22 @@ arrow = true;
           <argument>
             <kind>1</kind>
             <string>draw_self()
-if arrow = true
+
+/*if arrow = true
     {
     draw_sprite_ext(spr_arrow,0,x,y,image_xscale,image_yscale,90,image_blend,image_alpha)
+    }*/
+
+if mouse_check_button(mb_left) 
+    {
+    if makepointer = true
+    {var pointer;
+    pointer = instance_create(mouse_x,mouse_y,obj_ballistamouseshooter)
+    makepointer = false 
     }
-
-
+    draw_set_colour(c_black);
+    draw_line(obj_ballista.x,obj_ballista.y,mouse_x,mouse_y);
+    }
 </string>
           </argument>
         </arguments>

@@ -22,6 +22,7 @@
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
+    <sprite>sprites\spr_ballistapointer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -34,6 +35,7 @@
     <object>objects\obj_castle</object>
     <object>objects\obj_arrow</object>
     <object>objects\obj_flyingarrow</object>
+    <object>objects\obj_flyingarrowbackup</object>
     <object>objects\obj_orc</object>
     <object>objects\obj_flame</object>
     <object>objects\obj_ballista</object>
@@ -48,6 +50,7 @@
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_firework</object>
     <object>objects\obj_gameover</object>
+    <object>objects\obj_ballistamouseshooter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
