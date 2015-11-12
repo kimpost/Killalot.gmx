@@ -192,7 +192,7 @@ global.arrow = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if havearrow = false
+            <string>/*if havearrow = false
     {
     havearrow = true
     with (other)
