@@ -55,7 +55,7 @@ alarm[0] = 50
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_knigt">
+    <event eventtype="4" ename="obj_knight">
       <action>
         <libid>1</libid>
         <id>603</id>

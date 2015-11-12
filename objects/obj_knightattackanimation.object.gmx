@@ -49,9 +49,9 @@ candamage = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_knigt)
+            <string>if instance_exists(obj_knight)
     {
-    x = obj_knigt.x
+    x = obj_knight.x
     }
     else
     {

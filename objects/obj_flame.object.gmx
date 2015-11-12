@@ -80,7 +80,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_knigt">
+    <event eventtype="4" ename="obj_knight">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -91,7 +91,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_knigt</whoName>
+        <whoName>obj_knight</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
