@@ -18,6 +18,9 @@
     <sprite>sprites\spr_gold</sprite>
     <sprite>sprites\spr_knightattack</sprite>
     <sprite>sprites\spr_knightattackanimation</sprite>
+    <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_levelcomplete</sprite>
+    <sprite>sprites\spr_firework</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -39,6 +42,10 @@
     <object>objects\obj_spawnpointleft</object>
     <object>objects\obj_knightattackanimation</object>
     <object>objects\obj_gold</object>
+    <object>objects\obj_spawnpointright</object>
+    <object>objects\obj_tree</object>
+    <object>objects\obj_levelcompletet</object>
+    <object>objects\obj_firework</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
