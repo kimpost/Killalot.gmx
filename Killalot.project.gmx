@@ -52,12 +52,9 @@
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_firework</object>
     <object>objects\obj_gameover</object>
-<<<<<<< HEAD
     <object>objects\obj_ballistamouseshooter</object>
-=======
     <object>objects\obj_knightparent</object>
     <object>objects\obj_orcattackanimation</object>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>
