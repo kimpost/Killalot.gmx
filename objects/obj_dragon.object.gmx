@@ -28,8 +28,8 @@
             <string>hp = 5
 
 direction = 0
-speed = 2
-
+speed = (2)
+startspeed = (speed)
 </string>
           </argument>
         </arguments>
@@ -109,9 +109,11 @@ if x &lt;= -100
     direction = 0
     }
     
-    if y =520 and x &gt;=(room_width+80)
+    if y =520 and x &gt;=(room_width+40)
     {
-    instance_destroy()
+    y = 64
+    x = -64
+    speed = startspeed
     } 
 
 
