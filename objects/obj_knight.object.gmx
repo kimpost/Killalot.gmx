@@ -170,9 +170,12 @@ if sprite_index = spr_knightattack &amp;&amp; image_index &gt;=3
     sprite_index = spr_knight
     }
 
-if havearrow = true &amp;&amp; distance_to_object(obj_ballista) &lt; 10 &amp;&amp; global.arrow = false
-{havearrow = false
-global.arrow = true
+//This places an arrow in a ballista that is near
+var ballista;
+ballista = instance_nearest(x,y, obj_ballista)
+if havearrow = true &amp;&amp; distance_to_object(ballista) &lt;= 10 &amp;&amp; ballista.arrow = false
+{ballista.arrow = true
+havearrow = false
 }
 
 if hp = 0

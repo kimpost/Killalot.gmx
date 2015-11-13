@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>imageangle = 0
+creator = noone
+
+//This is the max speed of wich the arrow can fly
+fast = 15 
 </string>
           </argument>
         </arguments>
@@ -49,11 +53,15 @@
           <argument>
             <kind>1</kind>
             <string>var shoot, distance;
-distance = distance_to_object(obj_ballista)
-shoot = instance_create(obj_ballista.x,obj_ballista.y,obj_flyingarrowbackup)
+distance = distance_to_object(creator)/4 //The div calculates the drawback lenght speed build
+//To make sure the arrow can't fly super fast set fast limit in create
+if distance &gt;= fast
+{distance = fast}
+//The arrow created
+shoot = instance_create(creator.x,creator.y,obj_flyingarrowbackup)
 shoot.direction = imageangle
 shoot.speed = distance
-
+creator.arrow = false
 
 </string>
           </argument>
@@ -81,7 +89,7 @@ shoot.speed = distance
 y = mouse_y
 
 imageangle = image_angle
-image_angle = point_direction(x, y, obj_ballista.x,obj_ballista.y); 
+image_angle = point_direction(x, y, creator.x,creator.y); 
 
 
 

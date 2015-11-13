@@ -25,11 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar arrow;
+            <string>//globalvar arrow;
 arrow = true;
 
-
-//test variables below
+//Makes sure the pointer is drawn, and calculates trail in obj_ballistamouseshooter
 makepointer = true
 </string>
           </argument>
@@ -56,7 +55,8 @@ makepointer = true
             <string>makepointer = true
 if instance_exists(obj_ballistamouseshooter)
 {with (obj_ballistamouseshooter)
-{instance_destroy()}}
+{instance_destroy()}
+}
 
 /*if arrow = true
     {
@@ -68,7 +68,7 @@ if instance_exists(obj_ballistamouseshooter)
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="53">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -85,11 +85,21 @@ if instance_exists(obj_ballistamouseshooter)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if arrow = true
+            <string>///Make the obj_ballistamouseshooter
+if makepointer = true &amp;&amp; arrow = true
+    {
+    var pointer;
+    pointer = instance_create(mouse_x,mouse_y,obj_ballistamouseshooter)
+    pointer.creator = id
+    makepointer = false 
+    }
+    
+    
+/*if arrow = true
     {
     instance_create(x,y,obj_flyingarrow)
     arrow = false
-    }
+    }*/
 </string>
           </argument>
         </arguments>
@@ -114,21 +124,27 @@ if instance_exists(obj_ballistamouseshooter)
             <kind>1</kind>
             <string>draw_self()
 
-/*if arrow = true
+
+if makepointer = false
+    {
+    draw_set_colour(c_black);
+    draw_line(id.x,id.y,mouse_x,mouse_y);
+    }
+    
+if arrow = true
     {
     draw_sprite_ext(spr_arrow,0,x,y,image_xscale,image_yscale,90,image_blend,image_alpha)
-    }*/
+    }
 
-if mouse_check_button(mb_left) 
+
+
+/*if mouse_check_button(mb_left) 
     {
     if makepointer = true
     {var pointer;
     pointer = instance_create(mouse_x,mouse_y,obj_ballistamouseshooter)
     makepointer = false 
-    }
-    draw_set_colour(c_black);
-    draw_line(obj_ballista.x,obj_ballista.y,mouse_x,mouse_y);
-    }
+    }*/
 </string>
           </argument>
         </arguments>
