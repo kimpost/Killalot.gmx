@@ -11,6 +11,7 @@
     <sprite>sprites\spr_knigtdeath</sprite>
     <sprite>sprites\spr_jord</sprite>
     <sprite>sprites\spr_castle</sprite>
+    <sprite>sprites\spr_archertower</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_orc</sprite>
     <sprite>sprites\spr_orcattack</sprite>
@@ -25,6 +26,7 @@
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
     <sprite>sprites\spr_ballistapointer</sprite>
+    <sprite>sprites\sprite20</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -55,6 +57,14 @@
     <object>objects\obj_ballistamouseshooter</object>
     <object>objects\obj_knightparent</object>
     <object>objects\obj_orcattackanimation</object>
+    <object>objects\obj_archertower</object>
+    <objects name="storeitems">
+      <object>objects\obj_storearchertower</object>
+      <object>objects\obj_storeballista</object>
+      <object>objects\obj_store</object>
+      <object>objects\obj_itemcontrol</object>
+      <object>objects\obj_iteminvisibleplace</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>

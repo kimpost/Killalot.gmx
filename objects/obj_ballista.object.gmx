@@ -133,7 +133,7 @@ if makepointer = false
     
 if arrow = true
     {
-    draw_sprite_ext(spr_arrow,0,x,y,image_xscale,image_yscale,90,image_blend,image_alpha)
+    draw_sprite_ext(spr_arrow,0,x,y-15,image_xscale,image_yscale,90,image_blend,image_alpha)
     }
 
 
