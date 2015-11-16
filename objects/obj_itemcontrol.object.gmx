@@ -94,14 +94,13 @@ if iam = true &amp;&amp; invisible != noone
         global.gold += - value
         } //and we have subtracted the items value
     iam = false
-    /*with (obj_iteminvisibleplace)
-    {nowyouseeme = false}*/
     } else 
     {
     iam = false
-    /*with (obj_iteminvisibleplace)
-    {nowyouseeme = false}*/
     }
+
+with (obj_iteminvisibleplace)
+    {nowyouseeme = false}
 
 /*
 if iam = true &amp;&amp; collision_point( x, y, obj_iteminvisibleplace, true, false )
