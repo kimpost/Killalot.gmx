@@ -80,13 +80,13 @@ hspeed = 0.4
             <kind>1</kind>
             <string>///move pattern
 
-if distance_to_object (obj_knightparent) &lt;= 150 
-and distance_to_object (obj_castle) &gt;= 40
+event_inherited()
+
+if distance_to_object (obj_knightparent) &lt;= distance_to_object (obj_castle)
     {
-    move_towards_point(obj_knightparent.x,obj_knightparent.y,0.4)
+    move_towards_point (obj_knightparent.x,obj_castle.y,0.4)
     }
     else move_towards_point (obj_castle.x,obj_castle.y,0.4)
-    
 
 if direction = 0
     {
@@ -97,10 +97,9 @@ if direction = 180
     {
     image_xscale = -1
     }
-    
+
 //orc attack
 
-event_inherited()
 
 if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = +1
     {
@@ -112,8 +111,6 @@ if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = +1
     }
     }
     
-    
-   
 if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = -1
     {
     sprite_index = spr_orcattack
@@ -124,24 +121,33 @@ if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = -1
     }
     }
    
-if distance_to_object (obj_knightparent) 
-and distance_to_object (obj_castle) &gt;= 20
+if distance_to_object(obj_castle) &lt;= 5 and image_xscale = -1
     {
-    sprite_index = spr_orc
+    speed = 0
+    sprite_index = spr_orcattack    
+    image_speed = 0.1
+    if image_index =3 
+    {
+    instance_create (x-10,y,obj_orcattackanimation)
+    }   
     }
-   
-    if distance_to_object(obj_castle) &lt;= 20
+
+if distance_to_object(obj_castle) &lt;= 5 and image_xscale = +1
     {
-    speed = 0.1
+    speed = 0
     sprite_index = spr_orcattack    
     image_speed = 0.1
     if image_index =3 
     {
     instance_create (x+10,y,obj_orcattackanimation)
     }   
-    }
-
+    }    
     
+if distance_to_object (obj_knightparent) 
+and distance_to_object (obj_castle) &gt;= 20
+    {
+    sprite_index = spr_orc
+    }
 </string>
           </argument>
         </arguments>
