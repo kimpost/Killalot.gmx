@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_knight" x="480" y="640" name="inst_F0D924E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dragon" x="-64" y="64" name="inst_C8E7EDCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jord" x="0" y="640" name="inst_03B651E9" locked="0" code="" scaleX="0.550000011920929" scaleY="0.140000000596046" colour="4294967295" rotation="0"/>
     <instance objName="obj_debug" x="96" y="32" name="inst_05441FC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawnpointleft" x="-96" y="640" name="inst_BDF15A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -104,6 +103,7 @@
     <instance objName="obj_iteminvisibleplace" x="992" y="640" name="inst_EF79E35B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="192" y="640" name="inst_C5280EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="448" y="640" name="inst_075C1762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dragon2" x="-64" y="64" name="inst_A5332AEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

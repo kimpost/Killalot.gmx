@@ -18,6 +18,7 @@
       <sprite>sprites\spr_flame</sprite>
       <sprite>sprites\spr_dragon</sprite>
       <sprite>sprites\spr_orcattackanimation</sprite>
+      <sprite>sprites\spr_fireball</sprite>
     </sprites>
     <sprites name="Items/Environment">
       <sprite>sprites\spr_ballista</sprite>
@@ -53,7 +54,9 @@
       <object>objects\obj_spawnpointleft</object>
       <object>objects\obj_flame</object>
       <object>objects\obj_dragon</object>
+      <object>objects\obj_dragon2</object>
       <object>objects\obj_enemyparent</object>
+      <object>objects\obj_fireball</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_flyingarrow</object>
