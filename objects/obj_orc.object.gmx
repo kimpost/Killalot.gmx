@@ -82,12 +82,20 @@ hspeed = 0.4
 
 event_inherited()
 
-if distance_to_object (obj_knightparent) &lt;= distance_to_object (obj_castle)
+if instance_exists(obj_castle)
     {
-    move_towards_point (obj_knightparent.x,obj_castle.y,0.4)
+    if distance_to_object (obj_knightparent) &lt;= distance_to_object (obj_castle)
+        {
+         move_towards_point (obj_knightparent.x,obj_knightparent.y,0.4)
+        }
+        else move_towards_point (obj_castle.x,obj_castle.y,0.4)
     }
-    else move_towards_point (obj_castle.x,obj_castle.y,0.4)
-
+    else if instance_exists (obj_knightparent)
+    {
+    move_towards_point (obj_knightparent.x,obj_knightparent.y,0.4)
+    }
+    else speed = 0.4
+    
 if direction = 0
     {
     image_xscale = 1
