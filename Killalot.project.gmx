@@ -33,6 +33,7 @@
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
     <sprite>sprites\spr_iteminvisibleplace</sprite>
+    <sprite>sprites\spr_castleinvisibleplace</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -65,6 +66,10 @@
       <object>objects\obj_arrow</object>
     </objects>
     <objects name="storeitems">
+      <objects name="castle">
+        <object>objects\obj_storecastle</object>
+        <object>objects\obj_castleinvisibleplace</object>
+      </objects>
       <object>objects\obj_storearchertower</object>
       <object>objects\obj_storeballista</object>
       <object>objects\obj_store</object>

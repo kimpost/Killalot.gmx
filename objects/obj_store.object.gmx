@@ -25,11 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>item[0] = obj_storearchertower
-item[1] = obj_storeballista
+            <string>item[0] = obj_storecastle
+item[1] = obj_storearchertower
+item[2] = obj_storeballista
 
 //How many items does the store hold? this is for the store to draw the all
-items = 1
+items = 2
 
 
 var i;

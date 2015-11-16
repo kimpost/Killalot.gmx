@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_iteminvisibleplace</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -30,6 +30,9 @@ havebuild = false
 //Makes it visible and shows the player where he can build
 visible = false
 nowyouseeme = false
+
+//test variable
+destroy = false
 </string>
           </argument>
         </arguments>
@@ -54,6 +57,9 @@ nowyouseeme = false
             <kind>1</kind>
             <string>if nowyouseeme = true &amp;&amp; havebuild = false
 {visible = true} else {visible = false}
+
+if destroy = true
+{instance_destroy()}
 </string>
           </argument>
         </arguments>
