@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//This controls if an item has been built on the this place
 havebuild = false
+//Should I destroy the other spawn points?
+destroythem = false
 
 //Makes it visible and shows the player where he can build
 visible = false
@@ -56,7 +58,7 @@ nowyouseeme = false
             <string>if nowyouseeme = true &amp;&amp; havebuild = false
 {visible = true} else {visible = false}
 
-if havebuild = true
+if havebuild = true and destroythem = true
 {with (obj_castleinvisibleplace)
 {instance_destroy()}}
 /*var collide;

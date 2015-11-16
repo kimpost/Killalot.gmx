@@ -83,6 +83,7 @@ if iam = true &amp;&amp; invisible != noone
         {
         instance_create(invisible.x,invisible.y,whatitemshouldicreate) 
         invisible.havebuild = true //If not, now there is
+        invisible.destroythem = true //Make sure the other castlespawnpoints are destroyed
         global.gold += - value
         } //and we have subtracted the items value
     iam = false

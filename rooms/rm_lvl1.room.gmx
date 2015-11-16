@@ -54,11 +54,9 @@
     <instance objName="obj_knight" x="480" y="640" name="inst_F0D924E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dragon" x="-64" y="64" name="inst_C8E7EDCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_jord" x="0" y="640" name="inst_03B651E9" locked="0" code="" scaleX="0.550000011920929" scaleY="0.140000000596046" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ballista" x="448" y="608" name="inst_C7BEE00A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_debug" x="96" y="32" name="inst_05441FC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawnpointleft" x="-96" y="640" name="inst_BDF15A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawnpointright" x="1120" y="640" name="inst_9BB669CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree" x="160" y="640" name="inst_6896F85C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="192" y="640" name="inst_33860122" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="896" y="640" name="inst_FEB02818" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="128" y="640" name="inst_F542BC21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -87,16 +85,12 @@
     <instance objName="obj_gold" x="352" y="640" name="inst_5B45114E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gold" x="224" y="640" name="inst_A054EC88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gold" x="192" y="640" name="inst_3D903EB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gold" x="160" y="640" name="inst_B3E0F193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gold" x="384" y="640" name="inst_9CB8523B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_iteminvisibleplace" x="800" y="640" name="inst_EB894041" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_iteminvisibleplace" x="736" y="640" name="inst_EA372DB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="704" y="640" name="inst_D551C968" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_castle" x="160" y="640" name="inst_9796B90F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="576" y="640" name="inst_86577DF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_castleinvisibleplace" x="448" y="640" name="inst_88A4AD36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="320" y="640" name="inst_2DBAC97F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_castleinvisibleplace" x="192" y="640" name="inst_F9B14E12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="64" y="640" name="inst_AC07ADF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="832" y="640" name="inst_7C125DAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="960" y="640" name="inst_EA39B5F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -108,6 +102,8 @@
     <instance objName="obj_iteminvisibleplace" x="288" y="640" name="inst_221E57D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_iteminvisibleplace" x="32" y="640" name="inst_9AB26FF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_iteminvisibleplace" x="992" y="640" name="inst_EF79E35B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_castleinvisibleplace" x="192" y="640" name="inst_C5280EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_castleinvisibleplace" x="448" y="640" name="inst_075C1762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
