@@ -76,13 +76,14 @@ instance_create (x,y,obj_knightdeath)
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_ballista</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y-200,obj_gameover)
+            <string>instance_create(x = +512,y = +384,obj_gameover)
+    
 </string>
           </argument>
         </arguments>
