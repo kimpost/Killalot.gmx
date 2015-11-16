@@ -6,58 +6,64 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_dragon</sprite>
-    <sprite>sprites\spr_knight</sprite>
-    <sprite>sprites\spr_knigtdeath</sprite>
-    <sprite>sprites\spr_jord</sprite>
-    <sprite>sprites\spr_castle</sprite>
-    <sprite>sprites\spr_archertower</sprite>
-    <sprite>sprites\spr_arrow</sprite>
-    <sprite>sprites\spr_orc</sprite>
-    <sprite>sprites\spr_orcattack</sprite>
-    <sprite>sprites\spr_orcattackanimation</sprite>
-    <sprite>sprites\spr_flame</sprite>
-    <sprite>sprites\spr_ballista</sprite>
-    <sprite>sprites\spr_gold</sprite>
-    <sprite>sprites\spr_knightattack</sprite>
-    <sprite>sprites\spr_knightattackanimation</sprite>
-    <sprite>sprites\spr_tree</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_knight</sprite>
+      <sprite>sprites\spr_knightattack</sprite>
+      <sprite>sprites\spr_knightattackanimation</sprite>
+      <sprite>sprites\spr_knigtdeath</sprite>
+    </sprites>
+    <sprites name="Enemy Related">
+      <sprite>sprites\spr_orc</sprite>
+      <sprite>sprites\spr_orcattack</sprite>
+      <sprite>sprites\spr_flame</sprite>
+      <sprite>sprites\spr_dragon</sprite>
+      <sprite>sprites\spr_orcattackanimation</sprite>
+    </sprites>
+    <sprites name="Items/Environment">
+      <sprite>sprites\spr_ballista</sprite>
+      <sprite>sprites\spr_gold</sprite>
+      <sprite>sprites\spr_jord</sprite>
+      <sprite>sprites\spr_castle</sprite>
+      <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_tree</sprite>
+      <sprite>sprites\spr_ballistapointer</sprite>
+      <sprite>sprites\spr_archertower</sprite>
+    </sprites>
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
-    <sprite>sprites\spr_ballistapointer</sprite>
-    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\spr_iteminvisibleplace</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_knight</object>
-    <object>objects\obj_dragon</object>
-    <object>objects\obj_jord</object>
-    <object>objects\obj_castle</object>
-    <object>objects\obj_arrow</object>
-    <object>objects\obj_flyingarrow</object>
-    <object>objects\obj_flyingarrowbackup</object>
-    <object>objects\obj_orc</object>
-    <object>objects\obj_flame</object>
-    <object>objects\obj_ballista</object>
-    <object>objects\obj_debug</object>
-    <object>objects\obj_knightdeath</object>
-    <object>objects\obj_enemyparent</object>
-    <object>objects\obj_spawnpointleft</object>
-    <object>objects\obj_knightattackanimation</object>
-    <object>objects\obj_gold</object>
-    <object>objects\obj_spawnpointright</object>
-    <object>objects\obj_tree</object>
-    <object>objects\obj_levelcompletet</object>
-    <object>objects\obj_firework</object>
-    <object>objects\obj_gameover</object>
-    <object>objects\obj_ballistamouseshooter</object>
-    <object>objects\obj_knightparent</object>
-    <object>objects\obj_orcattackanimation</object>
-    <object>objects\obj_archertower</object>
+    <objects name="Player">
+      <object>objects\obj_knightparent</object>
+      <object>objects\obj_knightattackanimation</object>
+      <object>objects\obj_knightdeath</object>
+      <object>objects\obj_knight</object>
+    </objects>
+    <objects name="Enemy Related">
+      <object>objects\obj_spawnpointright</object>
+      <object>objects\obj_orc</object>
+      <object>objects\obj_orcattackanimation</object>
+      <object>objects\obj_spawnpointleft</object>
+      <object>objects\obj_flame</object>
+      <object>objects\obj_dragon</object>
+      <object>objects\obj_enemyparent</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_flyingarrow</object>
+      <object>objects\obj_flyingarrowbackup</object>
+      <object>objects\obj_castle</object>
+      <object>objects\obj_archertower</object>
+      <object>objects\obj_ballista</object>
+      <object>objects\obj_tree</object>
+      <object>objects\obj_gold</object>
+      <object>objects\obj_arrow</object>
+    </objects>
     <objects name="storeitems">
       <object>objects\obj_storearchertower</object>
       <object>objects\obj_storeballista</object>
@@ -65,6 +71,12 @@
       <object>objects\obj_itemcontrol</object>
       <object>objects\obj_iteminvisibleplace</object>
     </objects>
+    <object>objects\obj_firework</object>
+    <object>objects\obj_jord</object>
+    <object>objects\obj_debug</object>
+    <object>objects\obj_levelcompletet</object>
+    <object>objects\obj_gameover</object>
+    <object>objects\obj_ballistamouseshooter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl1</room>

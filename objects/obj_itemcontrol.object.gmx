@@ -86,11 +86,22 @@ depth = -1
 var invisible;
 invisible = instance_position(mouse_x, mouse_y, obj_iteminvisibleplace)
 if iam = true &amp;&amp; invisible != noone 
-{if invisible.havebuild = false //is there allready build upon it?
-{instance_create(invisible.x,invisible.y,whatitemshouldicreate) 
-invisible.havebuild = true //If not, now there is
-global.gold += - value} //and we have subtracted the items value
-iam = false} else {iam = false}
+    {
+    if invisible.havebuild = false //is there allready build upon it?
+        {
+        instance_create(invisible.x,invisible.y,whatitemshouldicreate) 
+        invisible.havebuild = true //If not, now there is
+        global.gold += - value
+        } //and we have subtracted the items value
+    iam = false
+    /*with (obj_iteminvisibleplace)
+    {nowyouseeme = false}*/
+    } else 
+    {
+    iam = false
+    /*with (obj_iteminvisibleplace)
+    {nowyouseeme = false}*/
+    }
 
 /*
 if iam = true &amp;&amp; collision_point( x, y, obj_iteminvisibleplace, true, false )
@@ -119,8 +130,11 @@ instance_create(mouse_x,obj_iteminvisibleplace.y,whatitemshouldicreate)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if value &lt;= global.gold
-{iam = true}
+            <string>///This draws the purchaseble item on the mouse
+if value &lt;= global.gold
+{iam = true
+with (obj_iteminvisibleplace)
+{nowyouseeme = true}}
 </string>
           </argument>
         </arguments>
