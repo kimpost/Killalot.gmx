@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_castle</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-showtree = instance_create(obj_castle.x ,obj_castle.y - (80),obj_castlestoretree)
+            <string>item[0] = obj_tree
+item[1] = obj_ballista
+item[2] = obj_gold
 
 //This checks if the player wants to buy - Look in step event
 wanttobuy = false
@@ -64,19 +65,27 @@ items = 2
           <argument>
             <kind>1</kind>
             <string>if wanttobuy = true &amp;&amp; looking = false
-    {if instance_exists(showtree)
+    {if instance_exists(obj_castle)
         {
-        showtree.wanttobuy = true
+        var i;
+        for (i = 0; i &lt;= items ; i += 1)
+            {
+        instance_create(obj_castle.x - (32) + (i *32),obj_castle.y - (80),item[i])
+            }
         looking = true
         }
     } else {wanttobuy = false}
     
 if showthem &gt;= 2
 {wanttobuy = false
-showtree.showthem = 2
 looking = false
 showthem = 0
-}
+var i;
+        for (i = 0; i &lt;= items ; i += 1)
+            {
+        with (item[i])
+        {instance_destroy()
+            }}}
 
 </string>
           </argument>

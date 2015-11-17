@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_castle</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-showtree = instance_create(obj_castle.x ,obj_castle.y - (80),obj_castlestoretree)
+            <string>item[0] = obj_castleupgrade0
+item[1] = obj_ballista
+item[2] = obj_gold
+
+item0bought = false
+item1bought = false
+item2bought = false
 
 //This checks if the player wants to buy - Look in step event
 wanttobuy = false
@@ -64,67 +69,39 @@ items = 2
           <argument>
             <kind>1</kind>
             <string>if wanttobuy = true &amp;&amp; looking = false
-    {if instance_exists(showtree)
+    {if instance_exists(obj_castle)
         {
-        showtree.wanttobuy = true
-        looking = true
+        var showselection1, showselection2, showselection3;
+        showselection0 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[0])
+        if item0bought = true
+            {showselection0.bought = true
+            showselection0.canbebought = false}
+        showselection1 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[1])
+        if item1bought = true
+            {showselection1.bought = true
+            showselection1.canbebought = false}
+        showselection2 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[2])
+        if item2bought = true
+            {showselection2.bought = true
+            showselection2.canbebought = false}
         }
+        looking = true
+        
     } else {wanttobuy = false}
     
 if showthem &gt;= 2
-{wanttobuy = false
-showtree.showthem = 2
+{
+wanttobuy = false
 looking = false
 showthem = 0
-}
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_iteminvisibleplace">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>other.havebuild = true
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>wanttobuy = true
-showthem ++
+var i;
+        for (i = 0; i &lt;= items ; i += 1)
+            {
+            if instance_exists(item[i])
+        {with (item[i])
+        {instance_destroy()
+}}}}
 
 </string>
           </argument>
