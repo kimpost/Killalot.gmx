@@ -58,7 +58,7 @@ distance = distance_to_object(creator)/4 //The div calculates the drawback lengh
 if distance &gt;= fast
 {distance = fast}
 //The arrow created
-shoot = instance_create(creator.x,creator.y,obj_flyingarrowbackup)
+shoot = instance_create(creator.x,creator.y - 5,obj_flyingarrowbackup)
 shoot.direction = imageangle
 shoot.speed = distance
 creator.arrow = false

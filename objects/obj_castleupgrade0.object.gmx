@@ -29,6 +29,8 @@
 value = 3000
 //What is my sprite
 mysprite = spr_tree
+//Who am I?
+iam = obj_castleupgrade0 //IMPORTANT - Remember to change item[number]bought in step event
 
 //Have i been pressed?
 select = 0
@@ -94,7 +96,7 @@ canbebought = true
             <kind>1</kind>
             <string>if bought = true &amp;&amp; canbebought = true
 {if instance_exists(obj_castlestoretree)
-    {obj_castlestoretree.item0bought = true
+    {obj_castlestoretree.item0bought = true //Remember to change this, also in obj_castlestoree
     if instance_exists(obj_castle)
 {instance_create(obj_castle.x + (xx),obj_castle.y + (yy),whatitemshouldicreate)
 //obj_castle.hp += hp

@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>item[0] = obj_castleupgrade0
-item[1] = obj_ballista
-item[2] = obj_gold
+item[1] = obj_castleupgrade1
+item[2] = obj_castleupgrade2
 
 item0bought = false
 item1bought = false
@@ -72,7 +72,7 @@ items = 2
     {if instance_exists(obj_castle)
         {
         var showselection1, showselection2, showselection3;
-        showselection0 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[0])
+        showselection0 = instance_create(obj_castle.x - (-32) ,obj_castle.y - (80),item[0])
         if item0bought = true
             {showselection0.bought = true
             showselection0.canbebought = false}
@@ -80,7 +80,7 @@ items = 2
         if item1bought = true
             {showselection1.bought = true
             showselection1.canbebought = false}
-        showselection2 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[2])
+        showselection2 = instance_create(obj_castle.x - (86) ,obj_castle.y - (80),item[2])
         if item2bought = true
             {showselection2.bought = true
             showselection2.canbebought = false}

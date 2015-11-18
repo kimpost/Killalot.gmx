@@ -72,6 +72,8 @@
         <object>objects\obj_castle</object>
         <object>objects\obj_castlestoretree</object>
         <object>objects\obj_castleupgrade0</object>
+        <object>objects\obj_castleupgrade1</object>
+        <object>objects\obj_castleupgrade2</object>
         <object>objects\obj_castlestoretreebackup</object>
       </objects>
       <object>objects\obj_archertower</object>
