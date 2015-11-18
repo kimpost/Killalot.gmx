@@ -63,6 +63,7 @@
       <object>objects\obj_fireball</object>
       <object>objects\obj_goblingjumpingplatform</object>
       <object>objects\obj_goblingparachute</object>
+      <object>objects\obj_gobling</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_flyingarrow</object>
