@@ -61,6 +61,8 @@
       <object>objects\obj_dragon3</object>
       <object>objects\obj_enemyparent</object>
       <object>objects\obj_fireball</object>
+      <object>objects\obj_goblingjumpingplatform</object>
+      <object>objects\obj_goblingparachute</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_flyingarrow</object>

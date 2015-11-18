@@ -30,6 +30,8 @@
 direction = 0
 speed = (2)
 startspeed = (speed)
+
+instance_create(x,y,obj_goblingjumpingplatform)
 </string>
           </argument>
         </arguments>
