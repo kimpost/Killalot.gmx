@@ -51,7 +51,9 @@ hspeed = 0.6
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_castle)
+            <string>event_inherited()
+
+if instance_exists(obj_castle)
     {
     if distance_to_object (obj_knightparent) &lt;= distance_to_object (obj_castle)
         {
@@ -74,11 +76,13 @@ if direction = 180
     {
     image_xscale = -1
     }
+    
+y = (obj_knightparent.y)
 
 //orc attack
 
 
-if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = +1
+/*if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = +1
     {
     sprite_index = spr_orcattack
     image_speed = 0.1

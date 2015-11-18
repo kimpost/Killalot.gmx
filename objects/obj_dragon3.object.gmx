@@ -156,6 +156,7 @@ if object_exists(obj_knightparent) and image_xscale = 1
     y = 64
     x = -64
     speed = startspeed
+    image_xscale = 1
     } 
 
 
