@@ -71,7 +71,7 @@ items = 2
             <string>if wanttobuy = true &amp;&amp; looking = false
     {if instance_exists(obj_castle)
         {
-        var showselection1, showselection2, showselection3;
+        var showselection0, showselection1, showselection2;
         showselection0 = instance_create(obj_castle.x - (-32) ,obj_castle.y - (80),item[0])
         if item0bought = true
             {showselection0.bought = true
