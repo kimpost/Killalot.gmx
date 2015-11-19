@@ -32,6 +32,7 @@
       <sprite>sprites\spr_tree</sprite>
       <sprite>sprites\spr_ballistapointer</sprite>
       <sprite>sprites\spr_archertower</sprite>
+      <sprite>sprites\spr_notenoughgold</sprite>
     </sprites>
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
@@ -105,6 +106,7 @@
       <object>objects\obj_trnbutik</object>
       <object>objects\obj_trnbutik2</object>
       <object>objects\obj_ballistabutik</object>
+      <object>objects\obj_notenoughgold</object>
     </objects>
   </objects>
   <rooms name="rooms">

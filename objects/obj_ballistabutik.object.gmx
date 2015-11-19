@@ -3,7 +3,7 @@
   <spriteName>spr_ballista</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>show = false
 visible = false
+
+price = 1500
 </string>
           </argument>
         </arguments>
@@ -50,11 +52,16 @@ visible = false
           <argument>
             <kind>1</kind>
             <string>if show = true
-{visible = true} 
+    {
+visible = true
+if global.gold &lt;= price
+    {
+    instance_create(x,y,obj_notenoughgold)
+    }
+    } 
 
 if show = false
 {visible = false} 
-
 
 </string>
           </argument>
@@ -78,9 +85,9 @@ if show = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.gold &gt;= 1000
+            <string>if global.gold &gt;= price
 {
-global.gold =global.gold - 1000
+global.gold =global.gold - price
 instance_destroy()
 instance_create(x,y+32,obj_ballista)
 }
