@@ -99,8 +99,15 @@
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_ballistamouseshooter</object>
+    <objects name="kims test">
+      <object>objects\obj_borg</object>
+      <object>objects\obj_trn</object>
+      <object>objects\obj_trnbutik</object>
+      <object>objects\obj_trnbutik2</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\test</room>
     <room>rooms\rm_lvl1</room>
   </rooms>
   <help>

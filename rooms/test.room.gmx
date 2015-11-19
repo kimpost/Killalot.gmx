@@ -103,9 +103,9 @@
     <instance objName="obj_iteminvisibleplace" x="992" y="640" name="inst_EF79E35B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="192" y="640" name="inst_C5280EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castleinvisibleplace" x="448" y="640" name="inst_075C1762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dragon3" x="-64" y="64" name="inst_265353E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_borg" x="480" y="640" name="inst_8BD0414C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_trnbutik" x="512" y="480" name="inst_0ABF94F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_iteminvisibleplace" x="96" y="640" name="inst_E3D899B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_borg" x="512" y="640" name="inst_B0EB1FD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trnbutik" x="544" y="480" name="inst_998AC04F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
