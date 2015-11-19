@@ -104,6 +104,7 @@
       <object>objects\obj_trn</object>
       <object>objects\obj_trnbutik</object>
       <object>objects\obj_trnbutik2</object>
+      <object>objects\obj_ballistabutik</object>
     </objects>
   </objects>
   <rooms name="rooms">
