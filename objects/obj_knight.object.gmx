@@ -33,7 +33,7 @@ canattack = true
 
 imagexscale = 1
 
-walkspeed = 3
+walkspeed = 5
 
 hp = 3
 
@@ -138,11 +138,14 @@ attack = keyboard_check(vk_down)
 moveleft = keyboard_check(vk_left)
 moveright = keyboard_check(vk_right)
 
+
 if moveleft
     {
     imagexscale = -1
     x -= walkspeed
     image_xscale = imagexscale
+    sprite_index = spr_knight
+    image_speed = 0.3
     }
     
 if moveright
@@ -150,6 +153,8 @@ if moveright
     imagexscale = 1
     x += walkspeed
     image_xscale = imagexscale
+    sprite_index = spr_knight
+    image_speed = 0.3
     }
     
 x = min(x,room_width-16)
@@ -158,17 +163,24 @@ x = max(x,16)
 if attack &amp;&amp; canattack = true
     {
     sprite_index = spr_knightattack
-    image_speed = 0.5
-    alarm[0] = 10
+    image_speed = 0.2
+    alarm[0] = 15
     canattack = false
     var animation;
     animation = instance_create(x,y,obj_knightattackanimation)
     animation.imagexscale = imagexscale
     }
 
+if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; canattack = true
+{sprite_index = spr_knightidle
+    image_speed = 0.03}
+
+    
+
 if sprite_index = spr_knightattack &amp;&amp; image_index &gt;=3
     {
-    sprite_index = spr_knight
+    sprite_index = spr_knightidle
+    image_speed = 0
     }
 
 //This places an arrow in a ballista that is near

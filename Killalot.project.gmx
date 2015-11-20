@@ -10,6 +10,8 @@
       <sprite>sprites\spr_knight</sprite>
       <sprite>sprites\spr_knightattack</sprite>
       <sprite>sprites\spr_knightattackanimation</sprite>
+      <sprite>sprites\lll</sprite>
+      <sprite>sprites\spr_knightidle</sprite>
       <sprite>sprites\spr_knigtdeath</sprite>
     </sprites>
     <sprites name="Enemy Related">
