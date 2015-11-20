@@ -72,12 +72,14 @@
       <object>objects\obj_flyingarrow</object>
       <object>objects\obj_flyingarrowbackup</object>
       <objects name="castle + its own store">
-        <object>objects\obj_castle</object>
-        <object>objects\obj_castlestoretree</object>
-        <object>objects\obj_castleupgrade0</object>
-        <object>objects\obj_castleupgrade1</object>
-        <object>objects\obj_castleupgrade2</object>
-        <object>objects\obj_castlestoretreebackup</object>
+        <objects name="Martins Obsolete Store">
+          <object>objects\obj_castlestoretree</object>
+          <object>objects\obj_castleupgrade0</object>
+          <object>objects\obj_castleupgrade1</object>
+          <object>objects\obj_castleupgrade2</object>
+          <object>objects\obj_castlestoretreebackup</object>
+          <object>objects\obj_castle2</object>
+        </objects>
       </objects>
       <object>objects\obj_archertower</object>
       <object>objects\obj_ballista</object>
@@ -103,7 +105,7 @@
     <object>objects\obj_gameover</object>
     <object>objects\obj_ballistamouseshooter</object>
     <objects name="kims test">
-      <object>objects\obj_borg</object>
+      <object>objects\obj_castle</object>
       <object>objects\obj_trn</object>
       <object>objects\obj_trnbutik</object>
       <object>objects\obj_trnbutik2</object>
