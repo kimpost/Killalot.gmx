@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>value = 0
+            <string>/*value = 0
 mysprite = noone
 iam = false
 whatitemshouldicreate = noone
@@ -82,7 +82,7 @@ depth = -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//this checks for which item we are trying to build on 
+            <string>/*//this checks for which item we are trying to build on 
 var invisible;
 invisible = instance_position(mouse_x, mouse_y, obj_iteminvisibleplace)
 if iam = true &amp;&amp; invisible != noone 
@@ -129,7 +129,7 @@ instance_create(mouse_x,obj_iteminvisibleplace.y,whatitemshouldicreate)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///This draws the purchaseble item on the mouse
+            <string>/*///This draws the purchaseble item on the mouse
 if value &lt;= global.gold
 {iam = true
 with (obj_iteminvisibleplace)
@@ -156,7 +156,7 @@ with (obj_iteminvisibleplace)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if value &gt; global.gold
+            <string>/*if value &gt; global.gold
 {draw_sprite_ext(mysprite,0,x,y,image_xscale,image_yscale,0,c_dkgray,1)
 }
 

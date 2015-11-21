@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//What do I cost?
+            <string>/*//What do I cost?
 value = 3000
 //What is my sprite
 mysprite = spr_tree
@@ -71,7 +71,7 @@ canbebought = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>select = 0
+            <string>/*select = 0
 </string>
           </argument>
         </arguments>
@@ -94,7 +94,7 @@ canbebought = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if bought = true &amp;&amp; canbebought = true
+            <string>/*if bought = true &amp;&amp; canbebought = true
 {if instance_exists(obj_castlestoretree)
     {obj_castlestoretree.item0bought = true //Remember to change this, also in obj_castlestoree
     if instance_exists(obj_castle)
@@ -128,7 +128,7 @@ obj_castle.showthem = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if canbebought = true
+            <string>/*if canbebought = true
 {select ++
 alarm[0] = room_speed * 5}
 
@@ -157,7 +157,7 @@ if canbebought = true &amp;&amp; select &gt;= 2 &amp;&amp; value &lt;= global.go
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>/*draw_self()
 if value &gt; global.gold &amp;&amp; bought = false
 {draw_sprite_ext(mysprite,0,x,y,image_xscale,image_yscale,0,c_dkgray,1)
 }

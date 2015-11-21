@@ -29,7 +29,7 @@
 
 hspeed = 0.4
 
-
+y = obj_knightparent.y
 </string>
           </argument>
         </arguments>

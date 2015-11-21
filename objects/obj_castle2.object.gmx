@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 showtree = instance_create(obj_castle.x ,obj_castle.y - (80),obj_castlestoretree)
 
 //This checks if the player wants to buy - Look in step event
@@ -63,7 +63,7 @@ items = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if wanttobuy = true &amp;&amp; looking = false
+            <string>/*if wanttobuy = true &amp;&amp; looking = false
     {if instance_exists(showtree)
         {
         showtree.wanttobuy = true
@@ -100,7 +100,7 @@ showthem = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>other.havebuild = true
+            <string>/*other.havebuild = true
 </string>
           </argument>
         </arguments>
@@ -123,7 +123,7 @@ showthem = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>wanttobuy = true
+            <string>/*wanttobuy = true
 showthem ++
 
 </string>

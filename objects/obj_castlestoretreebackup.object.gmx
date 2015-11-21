@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>item[0] = obj_tree
+            <string>/*item[0] = obj_tree
 item[1] = obj_ballista
 item[2] = obj_gold
 
@@ -64,7 +64,7 @@ items = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if wanttobuy = true &amp;&amp; looking = false
+            <string>/*if wanttobuy = true &amp;&amp; looking = false
     {if instance_exists(obj_castle)
         {
         var i;
@@ -109,7 +109,7 @@ var i;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>other.havebuild = true
+            <string>/*other.havebuild = true
 </string>
           </argument>
         </arguments>
@@ -132,7 +132,7 @@ var i;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>wanttobuy = true
+            <string>/*wanttobuy = true
 showthem ++
 
 </string>

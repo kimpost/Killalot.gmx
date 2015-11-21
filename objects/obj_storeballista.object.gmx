@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
+            <string>/*event_inherited()
 value = 2000
 mysprite = spr_ballista
 iam = false
@@ -52,7 +52,7 @@ whatitemshouldicreate = obj_ballista
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
+            <string>/*event_inherited()
 </string>
           </argument>
         </arguments>
@@ -75,7 +75,7 @@ whatitemshouldicreate = obj_ballista
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
+            <string>/*event_inherited()
 </string>
           </argument>
         </arguments>
@@ -98,7 +98,7 @@ whatitemshouldicreate = obj_ballista
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
+            <string>/*event_inherited()
 </string>
           </argument>
         </arguments>
@@ -121,7 +121,7 @@ whatitemshouldicreate = obj_ballista
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self()
+            <string>/*draw_self()
 event_inherited()
 
 </string>

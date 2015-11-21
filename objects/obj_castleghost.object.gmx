@@ -2,13 +2,13 @@
 <object>
   <spriteName>spr_castle</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
-  <depth>10</depth>
+  <visible>-1</visible>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,27 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*item[0] = obj_castleupgrade0
-item[1] = obj_castleupgrade1
-item[2] = obj_castleupgrade2
-
-item0bought = false
-item1bought = false
-item2bought = false
-
-//This checks if the player wants to buy - Look in step event
-wanttobuy = false
-//Makes sure they are not created a million times
-looking = false
-//If the player is looking and want to exit (if its &gt;= 2 it exits)
-showthem = 0
-//
-
-//How many items does the store hold? this is for the store to draw them all
-items = 2
-
-
-
+            <string>if distance_to_object (obj_castleplace) &lt;= 1
+{
+instance_create(x,y,obj_castle)
+}
 </string>
           </argument>
         </arguments>
@@ -68,40 +51,31 @@ items = 2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if wanttobuy = true &amp;&amp; looking = false
-    {if instance_exists(obj_castle)
-        {
-        var showselection0, showselection1, showselection2;
-        showselection0 = instance_create(obj_castle.x - (-32) ,obj_castle.y - (80),item[0])
-        if item0bought = true
-            {showselection0.bought = true
-            showselection0.canbebought = false}
-        showselection1 = instance_create(obj_castle.x - (32) ,obj_castle.y - (80),item[1])
-        if item1bought = true
-            {showselection1.bought = true
-            showselection1.canbebought = false}
-        showselection2 = instance_create(obj_castle.x - (86) ,obj_castle.y - (80),item[2])
-        if item2bought = true
-            {showselection2.bought = true
-            showselection2.canbebought = false}
-        }
-        looking = true
-        
-    } else {wanttobuy = false}
-    
-if showthem &gt;= 2
-{
-wanttobuy = false
-looking = false
-showthem = 0
-
-var i;
-        for (i = 0; i &lt;= items ; i += 1)
-            {
-            if instance_exists(item[i])
-        {with (item[i])
-        {instance_destroy()
-}}}}
+            <string>x = mouse_x
+y = mouse_y
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy()
 
 </string>
           </argument>

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>item[0] = obj_storecastle
+            <string>/*item[0] = obj_storecastle
 item[1] = obj_storearchertower
 item[2] = obj_storeballista
 

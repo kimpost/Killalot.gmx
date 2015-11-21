@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//This controls if an item has been built on the this place
+            <string>/*//This controls if an item has been built on the this place
 havebuild = false
 //Makes it visible and shows the player where he can build
 visible = false
@@ -55,7 +55,7 @@ destroy = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if nowyouseeme = true &amp;&amp; havebuild = false
+            <string>/*if nowyouseeme = true &amp;&amp; havebuild = false
 {visible = true} else {visible = false}
 
 if destroy = true

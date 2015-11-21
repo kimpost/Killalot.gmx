@@ -25,12 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 50
+            <string>y = obj_knightparent.y
+
+hp = 50
 if hp &lt;= 0 {instance_destroy()}
 
-instance_create(x-32,y-64,obj_trnbutik)
-instance_create(x+32,y-64,obj_trnbutik2)
-instance_create(x,y-64,obj_ballistabutik)
+with(obj_castlestore)
+    {
+    instance_destroy()
+    }
+
+instance_create(x-32,y-64,obj_towerleftstore)
+instance_create(x+32,y-64,obj_towerrightstore)
+instance_create(x,y-64,obj_ballistastorecastle)
 </string>
           </argument>
         </arguments>
@@ -53,7 +60,7 @@ instance_create(x,y-64,obj_ballistabutik)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_trnbutik)
+            <string>with (obj_towerleftstore)
     {
     if show = true
     {
@@ -62,7 +69,7 @@ instance_create(x,y-64,obj_ballistabutik)
     else show = true
     }
     
-with (obj_trnbutik2)
+with (obj_towerrightstore)
     {
     if show = true
     {
@@ -71,7 +78,7 @@ with (obj_trnbutik2)
     else show = true
     }
     
-with (obj_ballistabutik)
+with (obj_ballistastorecastle)
     {
     if show = true
     {

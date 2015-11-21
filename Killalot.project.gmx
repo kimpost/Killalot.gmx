@@ -81,13 +81,14 @@
           <object>objects\obj_castle2</object>
         </objects>
       </objects>
-      <object>objects\obj_archertower</object>
+      <object>objects\obj_tower</object>
       <object>objects\obj_ballista</object>
       <object>objects\obj_tree</object>
       <object>objects\obj_gold</object>
       <object>objects\obj_arrow</object>
+      <object>objects\obj_castle</object>
     </objects>
-    <objects name="storeitems">
+    <objects name="storeitems martin">
       <objects name="castle">
         <object>objects\obj_storecastle</object>
         <object>objects\obj_castleinvisibleplace</object>
@@ -104,13 +105,18 @@
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_ballistamouseshooter</object>
-    <objects name="kims test">
-      <object>objects\obj_castle</object>
-      <object>objects\obj_trn</object>
-      <object>objects\obj_trnbutik</object>
-      <object>objects\obj_trnbutik2</object>
-      <object>objects\obj_ballistabutik</object>
+    <objects name="kims butik">
+      <object>objects\obj_castlestore</object>
+      <object>objects\obj_towerstore</object>
+      <object>objects\obj_towerleftstore</object>
+      <object>objects\obj_towerrightstore</object>
+      <object>objects\obj_ballistastore</object>
+      <object>objects\obj_ballistastorecastle</object>
       <object>objects\obj_notenoughgold</object>
+      <object>objects\obj_castleplace</object>
+      <object>objects\obj_towerplace</object>
+      <object>objects\obj_castleghost</object>
+      <object>objects\obj_towerghost</object>
     </objects>
   </objects>
   <rooms name="rooms">

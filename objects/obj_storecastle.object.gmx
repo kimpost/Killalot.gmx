@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>value = 400
+            <string>/*value = 400
 mysprite = spr_castle
 iam = false
 whatitemshouldicreate = obj_castle
@@ -74,7 +74,7 @@ depth = -1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//this checks for which item we are trying to build on 
+            <string>/*//this checks for which item we are trying to build on 
 var invisible;
 invisible = instance_position(mouse_x, mouse_y, obj_castleinvisibleplace)
 if iam = true &amp;&amp; invisible != noone 
@@ -116,40 +116,10 @@ with (obj_castleinvisibleplace)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if value &lt;= global.gold
+            <string>/*if value &lt;= global.gold
 {iam = true
 with (obj_castleinvisibleplace)
 {nowyouseeme = true}}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self()
-if value &gt; global.gold
-{draw_sprite_ext(mysprite,0,x,y,image_xscale,image_yscale,0,c_dkgray,1)
-}
-
-if iam = true
-{draw_sprite(mysprite,0,mouse_x,mouse_y)}
-
 </string>
           </argument>
         </arguments>
