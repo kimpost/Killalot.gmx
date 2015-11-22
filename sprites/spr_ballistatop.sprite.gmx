@@ -2,15 +2,15 @@
 <sprite>
   <type>0</type>
   <xorig>32</xorig>
-  <yorigin>128</yorigin>
+  <yorigin>64</yorigin>
   <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>6</bbox_left>
   <bbox_right>57</bbox_right>
-  <bbox_top>11</bbox_top>
-  <bbox_bottom>127</bbox_bottom>
+  <bbox_top>12</bbox_top>
+  <bbox_bottom>58</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,8 +18,8 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>64</width>
-  <height>128</height>
+  <height>64</height>
   <frames>
-    <frame index="0">images\spr_archertower_0.png</frame>
+    <frame index="0">images\spr_ballistatop_0.png</frame>
   </frames>
 </sprite>

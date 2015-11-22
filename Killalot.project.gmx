@@ -29,18 +29,25 @@
       <sprite>sprites\spr_ballista</sprite>
       <sprite>sprites\spr_gold</sprite>
       <sprite>sprites\spr_jord</sprite>
-      <sprite>sprites\spr_castle</sprite>
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_tree</sprite>
       <sprite>sprites\spr_ballistapointer</sprite>
       <sprite>sprites\spr_archertower</sprite>
       <sprite>sprites\spr_notenoughgold</sprite>
+      <sprite>sprites\spr_archer</sprite>
+      <sprite>sprites\spr_archerarrow</sprite>
+      <sprite>sprites\spr_ballistatop</sprite>
+      <sprites name="castle+upgrades">
+        <sprite>sprites\spr_towerleft</sprite>
+        <sprite>sprites\spr_towerright</sprite>
+        <sprite>sprites\spr_castle</sprite>
+        <sprite>sprites\spr_castleback</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
-    <sprite>sprites\spr_iteminvisibleplace</sprite>
-    <sprite>sprites\spr_castleinvisibleplace</sprite>
+    <sprite>sprites\spr_place</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -71,22 +78,20 @@
     <objects name="Items">
       <object>objects\obj_flyingarrow</object>
       <object>objects\obj_flyingarrowbackup</object>
-      <objects name="castle + its own store">
-        <objects name="Martins Obsolete Store">
-          <object>objects\obj_castlestoretree</object>
-          <object>objects\obj_castleupgrade0</object>
-          <object>objects\obj_castleupgrade1</object>
-          <object>objects\obj_castleupgrade2</object>
-          <object>objects\obj_castlestoretreebackup</object>
-          <object>objects\obj_castle2</object>
-        </objects>
-      </objects>
       <object>objects\obj_tower</object>
       <object>objects\obj_ballista</object>
       <object>objects\obj_tree</object>
       <object>objects\obj_gold</object>
       <object>objects\obj_arrow</object>
-      <object>objects\obj_castle</object>
+      <object>objects\obj_archer</object>
+      <object>objects\obj_archerarrow</object>
+      <object>objects\obj_ballistatop</object>
+      <objects name="castle+">
+        <object>objects\obj_towerright</object>
+        <object>objects\obj_castle</object>
+        <object>objects\obj_towerleft</object>
+        <object>objects\obj_castleback</object>
+      </objects>
     </objects>
     <objects name="storeitems martin">
       <objects name="castle">
@@ -113,10 +118,10 @@
       <object>objects\obj_ballistastore</object>
       <object>objects\obj_ballistastorecastle</object>
       <object>objects\obj_notenoughgold</object>
-      <object>objects\obj_castleplace</object>
-      <object>objects\obj_towerplace</object>
+      <object>objects\obj_place</object>
       <object>objects\obj_castleghost</object>
       <object>objects\obj_towerghost</object>
+      <object>objects\obj_archerontowerstore</object>
     </objects>
   </objects>
   <rooms name="rooms">

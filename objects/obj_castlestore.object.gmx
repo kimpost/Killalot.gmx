@@ -74,7 +74,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_castleplace)
+            <string>with(obj_place)
      {        
     visible = false
      }  
@@ -102,7 +102,7 @@
             <kind>1</kind>
             <string>if global.gold &gt;= price
     {
-with(obj_castleplace)
+with(obj_place)
      {        
     visible = true
      }  
