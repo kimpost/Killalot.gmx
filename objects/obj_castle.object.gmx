@@ -25,96 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = obj_knightparent.y
-
-hp = 50
+            <string>hp = 50
 if hp &lt;= 0 {instance_destroy()}
 
 with(obj_castlestore)
     {
     instance_destroy()
     }
+x = (obj_castleback.x)
+y = (obj_castleback.y)
 
-instance_create(x,y-200,obj_towerleftstore)
-instance_create(x,y-200,obj_towerrightstore)
-instance_create(x,y-200,obj_ballistastorecastle)
-
-instance_create(x,y,obj_castleback)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-if alarm[0] = -1{
-with (obj_towerleftstore)
-    {
-    if show = true
-    {
-    show = false
-    }
-    else show = true
-    }
-    
-with (obj_towerrightstore)
-    {
-    if show = true
-    {
-    show = false
-    }
-    else show = true
-    }
-    
-with (obj_ballistastorecastle)
-    {
-    if show = true
-    {
-    show = false
-    }
-    else show = true
-    }
-      }  
-      if alarm[0] = -1
-{alarm[0] = 30}
 </string>
           </argument>
         </arguments>

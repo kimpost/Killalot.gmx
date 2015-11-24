@@ -22,8 +22,11 @@
       <sprite>sprites\spr_orcattackanimation</sprite>
       <sprite>sprites\spr_fireball</sprite>
       <sprite>sprites\spr_goblingjumpingplatform</sprite>
-      <sprite>sprites\spr_goblin</sprite>
+      <sprite>sprites\spr_goblinwarrior</sprite>
       <sprite>sprites\spr_goblingparachute</sprite>
+      <sprite>sprites\spr_goblinarcher</sprite>
+      <sprite>sprites\spr_goblinthief</sprite>
+      <sprite>sprites\spr_lizard</sprite>
     </sprites>
     <sprites name="Items/Environment">
       <sprite>sprites\spr_ballista</sprite>
@@ -47,7 +50,11 @@
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
+    <sprite>sprites\spr_placebuilding</sprite>
     <sprite>sprites\spr_place</sprite>
+    <sprite>sprites\spr_placetowerleft</sprite>
+    <sprite>sprites\spr_placetowerright</sprite>
+    <sprite>sprites\spr_placecastle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -114,15 +121,19 @@
     <objects name="kims butik">
       <object>objects\obj_castlestore</object>
       <object>objects\obj_towerstore</object>
-      <object>objects\obj_towerleftstore</object>
-      <object>objects\obj_towerrightstore</object>
       <object>objects\obj_ballistastore</object>
       <object>objects\obj_ballistastorecastle</object>
       <object>objects\obj_notenoughgold</object>
-      <object>objects\obj_place</object>
       <object>objects\obj_castleghost</object>
       <object>objects\obj_towerghost</object>
       <object>objects\obj_archerontowerstore</object>
+      <objects name="placingzones">
+        <object>objects\obj_place</object>
+        <object>objects\obj_placecastle</object>
+        <object>objects\obj_placetowerleft</object>
+        <object>objects\obj_placetowerright</object>
+        <object>objects\obj_placetower</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -25,9 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object (obj_place) &lt;= 1
+            <string>if distance_to_object (obj_placetowerleft) &lt;= 10
 {
-instance_create(x,y,obj_tower)
+instance_create(x,y,obj_towerleft)
+}
+
+if distance_to_object (obj_placetowerright) &lt;= 10
+{
+instance_create(x,y,obj_towerright)
+}
+
+if distance_to_object (obj_place) &lt;= 1
+{
+instance_create(x,y,obj_placetower)
 }
 </string>
           </argument>

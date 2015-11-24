@@ -3,7 +3,7 @@
   <spriteName>spr_place</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>10</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="4" ename="obj_placetower">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,11 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if distance_to_object(obj_tower) &lt;=20 {instance_destroy()}
-if distance_to_object(obj_ballista) &lt;=20 {instance_destroy()}
-if distance_to_object(obj_tree) &lt;=20 {instance_destroy()}
-if distance_to_object(obj_castle) &lt;=20 {instance_destroy()}
-
+            <string>instance_create (x,y,obj_tower)
+instance_destroy()
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y = obj_knightparent.y
+            <string>y = obj_castleback.y
+
+
 </string>
           </argument>
         </arguments>

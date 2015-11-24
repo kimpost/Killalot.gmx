@@ -78,6 +78,16 @@
      {        
     visible = false
      }  
+     
+with(obj_placetowerleft)
+     {        
+    visible = false
+     }  
+     
+with(obj_placetowerright)
+     {        
+    visible = false
+     }  
 </string>
           </argument>
         </arguments>
@@ -104,7 +114,16 @@
      {        
     visible = true
      }  
+     
+with(obj_placetowerleft)
+     {        
+    visible = true
+     }       
 
+with(obj_placetowerright)
+     {        
+    visible = true
+     }       
 instance_create(x,y,obj_towerghost)
 </string>
           </argument>
