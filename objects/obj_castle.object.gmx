@@ -35,6 +35,7 @@ with(obj_castlestore)
 x = (obj_castleback.x)
 y = (obj_castleback.y)
 
+instance_create(x,y-80,obj_placeballistaorarcher)
 </string>
           </argument>
         </arguments>

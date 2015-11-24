@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>x = (obj_castleback.x)
 y = (obj_castleback.y)
+
+instance_create(x-55,y-90,obj_placeballistaorarcher)
 </string>
           </argument>
         </arguments>

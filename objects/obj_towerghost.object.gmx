@@ -37,7 +37,7 @@ instance_create(x,y,obj_towerright)
 
 if distance_to_object (obj_place) &lt;= 1
 {
-instance_create(x,y,obj_placetower)
+instance_create(x,y,obj_placetowerlocationmarker)
 }
 </string>
           </argument>

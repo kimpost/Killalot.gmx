@@ -122,17 +122,23 @@
       <object>objects\obj_castlestore</object>
       <object>objects\obj_towerstore</object>
       <object>objects\obj_ballistastore</object>
-      <object>objects\obj_ballistastorecastle</object>
       <object>objects\obj_notenoughgold</object>
-      <object>objects\obj_castleghost</object>
-      <object>objects\obj_towerghost</object>
-      <object>objects\obj_archerontowerstore</object>
+      <object>objects\obj_archerstore</object>
       <objects name="placingzones">
         <object>objects\obj_place</object>
+        <object>objects\obj_placeballistaorarcher</object>
         <object>objects\obj_placecastle</object>
         <object>objects\obj_placetowerleft</object>
         <object>objects\obj_placetowerright</object>
-        <object>objects\obj_placetower</object>
+        <object>objects\obj_placetowerlocationmarker</object>
+        <object>objects\obj_placeballistalocationmarker</object>
+        <object>objects\obj_placearcherlocationmarker</object>
+      </objects>
+      <objects name="ghosts">
+        <object>objects\obj_ballistaghost</object>
+        <object>objects\obj_towerghost</object>
+        <object>objects\obj_castleghost</object>
+        <object>objects\obj_archerghost</object>
       </objects>
     </objects>
   </objects>
