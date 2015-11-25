@@ -36,6 +36,10 @@ x = (obj_castleback.x)
 y = (obj_castleback.y)
 
 instance_create(x,y-80,obj_placeballistaorarcher)
+
+instance_create(x-64,y,obj_placetowerleft)
+
+instance_create(x+64,y,obj_placetowerright)
 </string>
           </argument>
         </arguments>

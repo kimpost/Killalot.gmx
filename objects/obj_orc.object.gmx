@@ -140,7 +140,7 @@ if distance_to_object(obj_castle) &lt;= 5 and image_xscale = -1
     }   
     }
 
-if distance_to_object(obj_castle) &lt;= 5 and image_xscale = +1
+if distance_to_object(obj_castle)  &lt;= 5 and image_xscale = +1
     {
     speed = 0
     sprite_index = spr_orcattack    
@@ -149,10 +149,33 @@ if distance_to_object(obj_castle) &lt;= 5 and image_xscale = +1
     {
     instance_create (x+10,y,obj_orcattackanimation)
     }   
-    }    
+    }   
+    
+if distance_to_object(obj_tower) &lt;= 2 and image_xscale = -1
+    {
+    speed = 0
+    sprite_index = spr_orcattack    
+    image_speed = 0.1
+    if image_index =3 
+    {
+    instance_create (x-10,y,obj_orcattackanimation)
+    }   
+    }
+
+if distance_to_object(obj_tower)  &lt;= 2 and image_xscale = +1
+    {
+    speed = 0
+    sprite_index = spr_orcattack    
+    image_speed = 0.1
+    if image_index =3 
+    {
+    instance_create (x+10,y,obj_orcattackanimation)
+    }   
+    }        
     
 if distance_to_object (obj_knightparent) 
 and distance_to_object (obj_castle) &gt;= 20
+and distance_to_object (obj_tower) &gt;= 20
     {
     sprite_index = spr_orc
     }

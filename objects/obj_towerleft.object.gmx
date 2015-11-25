@@ -29,6 +29,8 @@
 y = (obj_castleback.y)
 
 instance_create(x-55,y-90,obj_placeballistaorarcher)
+
+with(obj_placetowerleft){instance_destroy()}
 </string>
           </argument>
         </arguments>
