@@ -58,6 +58,7 @@
       <sprites name="Archer">
         <sprite>sprites\spr_archer_aim</sprite>
         <sprite>sprites\spr_archer</sprite>
+        <sprite>sprites\spr_archerarms</sprite>
         <sprite>sprites\spr_archer_shoot</sprite>
       </sprites>
       <sprite>sprites\spr_archerarrow</sprite>
@@ -103,7 +104,7 @@
       <object>objects\obj_fireball</object>
       <object>objects\obj_goblingjumpingplatform</object>
       <object>objects\obj_goblingparachute</object>
-      <object>objects\obj_gobling</object>
+      <object>objects\obj_goblin</object>
     </objects>
     <objects name="Items">
       <object>objects\obj_flyingarrow</object>
@@ -113,7 +114,10 @@
       <object>objects\obj_tree</object>
       <object>objects\obj_gold</object>
       <object>objects\obj_arrow</object>
-      <object>objects\obj_archer</object>
+      <objects name="Archer">
+        <object>objects\obj_archer</object>
+        <object>objects\obj_archerarms</object>
+      </objects>
       <object>objects\obj_archerarrow</object>
       <object>objects\obj_ballistatop</object>
       <objects name="castle+">
