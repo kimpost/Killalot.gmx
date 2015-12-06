@@ -11,7 +11,9 @@
       <sprite>sprites\spr_knightattack</sprite>
       <sprite>sprites\spr_knightattackanimation</sprite>
       <sprite>sprites\lll</sprite>
+      <sprite>sprites\spr_knight_runattack</sprite>
       <sprite>sprites\spr_knightidle</sprite>
+      <sprite>sprites\spr_knight_run</sprite>
       <sprite>sprites\spr_knigtdeath</sprite>
     </sprites>
     <sprites name="Enemy Related">
@@ -21,9 +23,11 @@
         <sprite>sprites\spr_orcattack</sprite>
       </sprites>
       <sprite>sprites\spr_flame</sprite>
-      <sprite>sprites\spr_dragon</sprite>
       <sprite>sprites\spr_orcattackanimation</sprite>
       <sprite>sprites\spr_fireball</sprite>
+      <sprites name="Dragon">
+        <sprite>sprites\spr_dragon_fly</sprite>
+      </sprites>
       <sprite>sprites\spr_goblingjumpingplatform</sprite>
       <sprites name="Goblinarcher">
         <sprite>sprites\spr_goblinarcher</sprite>
@@ -117,8 +121,8 @@
       <objects name="Archer">
         <object>objects\obj_archer</object>
         <object>objects\obj_archerarms</object>
+        <object>objects\obj_archerarrow</object>
       </objects>
-      <object>objects\obj_archerarrow</object>
       <object>objects\obj_ballistatop</object>
       <objects name="castle+">
         <object>objects\obj_towerright</object>

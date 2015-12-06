@@ -55,7 +55,7 @@ flying = false
             <string>image_angle = direction
 gravity = 0.02
 if flying = false
-{move_towards_point(target.x,target.y-50,1)
+{move_towards_point(target.x,target.y-30,1)
 flying = true}
 speed = 8
 

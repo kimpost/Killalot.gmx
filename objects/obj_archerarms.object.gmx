@@ -74,12 +74,11 @@
             <string>if instance_exists(obj_enemyparent)
 {var nearest;
 nearest = instance_nearest(x,y,obj_enemyparent)
-image_angle = point_direction(x,y,nearest.x,nearest.y-30)
+image_angle = point_direction(x,y,nearest.x,nearest.y-20)
 if canshoot = true
 {var shoot;
 shoot = instance_create(x +lengthdir_x(10,image_angle), y +lengthdir_y(10,image_angle),obj_archerarrow)
-with (shoot)
-{target = nearest}
+shoot.target = nearest
 alarm[0] = 60
 canshoot = false
 }
