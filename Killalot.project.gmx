@@ -82,12 +82,17 @@
     <sprite>sprites\spr_placetowerleft</sprite>
     <sprite>sprites\spr_placetowerright</sprite>
     <sprite>sprites\spr_placecastle</sprite>
+    <sprite>sprites\spr_gotocastle</sprite>
+    <sprite>sprites\spr_trap</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_movetocastle.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_knightparent</object>
@@ -171,6 +176,8 @@
         <object>objects\obj_archerghost</object>
       </objects>
     </objects>
+    <object>objects\obj_enemygotocastle</object>
+    <object>objects\obj_trap</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>

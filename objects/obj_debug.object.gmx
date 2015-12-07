@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>globalvar gold;
-gold = 6000
+gold = 0
+globalvar castlehealth;
+castlehealth = 5 
 </string>
           </argument>
         </arguments>
@@ -73,6 +75,7 @@ gold = 6000
           <argument>
             <kind>1</kind>
             <string>draw_text(room_width/2,700, "Gold: " +string (gold)) 
+draw_text(room_width/2,730, "Castle Health: " +string (castlehealth)) 
 </string>
           </argument>
         </arguments>

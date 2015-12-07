@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 3
+            <string>event_inherited()
+
+hp = 3
 
 hspeed = 0.4
 
@@ -52,10 +54,42 @@ y = obj_knightparent.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if irandom(2) = 0
+            <string>if gotocastle = false
+{if irandom(2) = 0
     {
     instance_create (x,y,obj_gold)
     }
+} 
+else
+{
+global.castlehealth --
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy when walking to castle
+//Activated in enemy_parent
+event_inherited()
 </string>
           </argument>
         </arguments>
@@ -81,6 +115,9 @@ y = obj_knightparent.y
             <string>///move pattern
 
 event_inherited()
+
+if gotocastle = true
+{script_execute(scr_movetocastle)}
 
 if instance_exists(obj_castle)
     {
@@ -179,6 +216,29 @@ and distance_to_object (obj_tower) &gt;= 20
     {
     sprite_index = spr_orc
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemygotocastle">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
 </string>
           </argument>
         </arguments>
