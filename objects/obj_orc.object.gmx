@@ -116,8 +116,14 @@ event_inherited()
 
 event_inherited()
 
+//The move to castle script
 if gotocastle = true
 {script_execute(scr_movetocastle)}
+
+if gotocastle = false
+{script_execute(scr_orcmove)}
+
+/*
 
 if instance_exists(obj_castle)
     {
@@ -132,7 +138,7 @@ if instance_exists(obj_castle)
     move_towards_point (obj_knightparent.x,obj_knightparent.y,0.4)
     }
     else speed = 0.4
-    
+   */ 
 if direction = 0
     {
     image_xscale = 1
@@ -144,7 +150,7 @@ if direction = 180
     }
 
 //orc attack
-
+/*
 
 if distance_to_object (obj_knightparent) &lt;= 20 and image_xscale = +1
     {

@@ -76,6 +76,9 @@ castlehealth = 5
             <kind>1</kind>
             <string>draw_text(room_width/2,700, "Gold: " +string (gold)) 
 draw_text(room_width/2,730, "Castle Health: " +string (castlehealth)) 
+
+if castlehealth &lt;= 3
+{draw_sprite_ext( spr_fire, -1, obj_castleback.x -20, obj_castleback.y -20,image_xscale ,image_yscale ,0 ,c_white , 1 )}
 </string>
           </argument>
         </arguments>

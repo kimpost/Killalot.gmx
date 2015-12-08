@@ -85,6 +85,7 @@
     <sprite>sprites\spr_gotocastle</sprite>
     <sprite>sprites\spr_trap</sprite>
     <sprite>sprites\spr_trapcollission</sprite>
+    <sprite>sprites\spr_fire</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -93,28 +94,30 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movetocastle.gml</script>
+    <script>scripts\scr_orcmove.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">
+      <object>objects\obj_playerparent</object>
       <object>objects\obj_knightparent</object>
       <object>objects\obj_knightattackanimation</object>
       <object>objects\obj_knightdeath</object>
       <object>objects\obj_knight</object>
     </objects>
     <objects name="Enemy Related">
-      <object>objects\obj_spawnpointright</object>
+      <object>objects\obj_enemyparent</object>
       <object>objects\obj_orc</object>
       <object>objects\obj_orcattackanimation</object>
-      <object>objects\obj_spawnpointleft</object>
       <object>objects\obj_flame</object>
       <object>objects\obj_dragon</object>
       <object>objects\obj_dragon2</object>
       <object>objects\obj_dragon3</object>
-      <object>objects\obj_enemyparent</object>
       <object>objects\obj_fireball</object>
       <object>objects\obj_goblingjumpingplatform</object>
       <object>objects\obj_goblingparachute</object>
       <object>objects\obj_goblin</object>
+      <object>objects\obj_spawnpointleft</object>
+      <object>objects\obj_spawnpointright</object>
     </objects>
     <objects name="Items">
       <objects name="Trap">
@@ -143,22 +146,6 @@
       <object>objects\obj_gold</object>
       <object>objects\obj_arrow</object>
     </objects>
-    <objects name="storeitems martin">
-      <objects name="castle">
-        <object>objects\obj_storecastle</object>
-        <object>objects\obj_castleinvisibleplace</object>
-      </objects>
-      <object>objects\obj_storearchertower</object>
-      <object>objects\obj_storeballista</object>
-      <object>objects\obj_store</object>
-      <object>objects\obj_itemcontrol</object>
-      <object>objects\obj_iteminvisibleplace</object>
-    </objects>
-    <object>objects\obj_firework</object>
-    <object>objects\obj_jord</object>
-    <object>objects\obj_debug</object>
-    <object>objects\obj_levelcompletet</object>
-    <object>objects\obj_gameover</object>
     <objects name="kims butik">
       <object>objects\obj_castlestore</object>
       <object>objects\obj_towerstore</object>
@@ -182,9 +169,25 @@
         <object>objects\obj_archerghost</object>
       </objects>
     </objects>
+    <object>objects\obj_jord</object>
+    <object>objects\obj_debug</object>
+    <object>objects\obj_levelcompletet</object>
+    <object>objects\obj_gameover</object>
     <object>objects\obj_enemygotocastle</object>
     <objects name="Obsolete">
+      <objects name="storeitems martin">
+        <objects name="castle">
+          <object>objects\obj_storecastle</object>
+          <object>objects\obj_castleinvisibleplace</object>
+        </objects>
+        <object>objects\obj_storearchertower</object>
+        <object>objects\obj_storeballista</object>
+        <object>objects\obj_store</object>
+        <object>objects\obj_itemcontrol</object>
+        <object>objects\obj_iteminvisibleplace</object>
+      </objects>
       <object>objects\obj_flyingarrow</object>
+      <object>objects\obj_firework</object>
     </objects>
   </objects>
   <rooms name="rooms">
