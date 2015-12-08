@@ -101,6 +101,7 @@ image_index = 0}
             <string>
 if showspikes = true
 {
+instance_create(x,y,obj_trap_damageitem)
 alarm[0] = 90
 image_speed = 0.3
 showspikes = false

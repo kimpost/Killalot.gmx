@@ -84,6 +84,7 @@
     <sprite>sprites\spr_placecastle</sprite>
     <sprite>sprites\spr_gotocastle</sprite>
     <sprite>sprites\spr_trap</sprite>
+    <sprite>sprites\spr_trapcollission</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -116,25 +117,31 @@
       <object>objects\obj_goblin</object>
     </objects>
     <objects name="Items">
-      <object>objects\obj_flyingarrow</object>
-      <object>objects\obj_flyingarrowbackup</object>
-      <object>objects\obj_tower</object>
-      <object>objects\obj_ballista</object>
-      <object>objects\obj_tree</object>
-      <object>objects\obj_gold</object>
-      <object>objects\obj_arrow</object>
-      <objects name="Archer">
-        <object>objects\obj_archer</object>
-        <object>objects\obj_archerarms</object>
-        <object>objects\obj_archerarrow</object>
+      <objects name="Trap">
+        <object>objects\obj_trap</object>
+        <object>objects\obj_trap_damageitem</object>
       </objects>
-      <object>objects\obj_ballistatop</object>
+      <objects name="Ballista">
+        <object>objects\obj_ballistatop</object>
+        <object>objects\obj_ballista</object>
+        <object>objects\obj_flyingarrowbackup</object>
+        <object>objects\obj_ballistamouseshooter</object>
+      </objects>
       <objects name="castle+">
         <object>objects\obj_towerright</object>
         <object>objects\obj_castle</object>
         <object>objects\obj_towerleft</object>
         <object>objects\obj_castleback</object>
       </objects>
+      <objects name="Archer">
+        <object>objects\obj_archer</object>
+        <object>objects\obj_archerarms</object>
+        <object>objects\obj_archerarrow</object>
+      </objects>
+      <object>objects\obj_tower</object>
+      <object>objects\obj_tree</object>
+      <object>objects\obj_gold</object>
+      <object>objects\obj_arrow</object>
     </objects>
     <objects name="storeitems martin">
       <objects name="castle">
@@ -152,7 +159,6 @@
     <object>objects\obj_debug</object>
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_gameover</object>
-    <object>objects\obj_ballistamouseshooter</object>
     <objects name="kims butik">
       <object>objects\obj_castlestore</object>
       <object>objects\obj_towerstore</object>
@@ -177,7 +183,9 @@
       </objects>
     </objects>
     <object>objects\obj_enemygotocastle</object>
-    <object>objects\obj_trap</object>
+    <objects name="Obsolete">
+      <object>objects\obj_flyingarrow</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>

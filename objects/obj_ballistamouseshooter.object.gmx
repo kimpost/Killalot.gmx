@@ -88,8 +88,10 @@ creator.arrow = false
             <string>x = mouse_x
 y = mouse_y
 
-imageangle = image_angle
+imageangle = image_angle;
 image_angle = point_direction(x, y, creator.x,creator.y); 
+//Returns the image angle to the ballista on the top
+creator.pointerdirection = imageangle
 
 
 
