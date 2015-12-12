@@ -48,6 +48,7 @@
         <sprite>sprites\spr_lizard</sprite>
         <sprite>sprites\spr_lizardbrute_run</sprite>
         <sprite>sprites\spr_lizardbrute_attack</sprite>
+        <sprite>sprites\spr_lizardbrute_walk</sprite>
       </sprites>
     </sprites>
     <sprites name="Items/Environment">
@@ -100,6 +101,11 @@
     <script>scripts\scr_movetocastle.gml</script>
     <script>scripts\scr_orcmove.gml</script>
     <script>scripts\scr_goblinmove.gml</script>
+    <scripts name="Lizard">
+      <script>scripts\scr_lizardidle.gml</script>
+      <script>scripts\scr_lizardwalk.gml</script>
+      <script>scripts\scr_lizardrun.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -111,18 +117,23 @@
     </objects>
     <objects name="Enemy Related">
       <object>objects\obj_enemyparent</object>
-      <object>objects\obj_flame</object>
       <objects name="Orc">
         <object>objects\obj_orc</object>
         <object>objects\obj_orcattackanimation</object>
+      </objects>
+      <objects name="GoblinWarrior">
+        <object>objects\obj_goblin</object>
+      </objects>
+      <objects name="LizardBrute">
+        <object>objects\obj_lizardbrute</object>
       </objects>
       <object>objects\obj_dragon</object>
       <object>objects\obj_dragon2</object>
       <object>objects\obj_dragon3</object>
       <object>objects\obj_fireball</object>
+      <object>objects\obj_flame</object>
       <object>objects\obj_goblingjumpingplatform</object>
       <object>objects\obj_goblingparachute</object>
-      <object>objects\obj_goblin</object>
       <object>objects\obj_spawnpointleft</object>
       <object>objects\obj_spawnpointright</object>
     </objects>
@@ -198,6 +209,7 @@
     </objects>
     <object>objects\obj_goblintodragon</object>
     <object>objects\obj_smoke</object>
+    <object>objects\obj_goblinthief</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>

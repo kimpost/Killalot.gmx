@@ -1,6 +1,5 @@
 speed = 0
-if image_xscale = 1
-{image_xscale += -0.002} else {image_xscale += 0.002}
+image_xscale += -0.002
 image_yscale += -0.002
 y += -0.4
 
