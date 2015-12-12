@@ -7,7 +7,7 @@ if instance_exists(target)
 if distance_to_object(target) <= 10 
 {
     speed = 0
-    sprite_index = spr_orcattack
+    sprite_index = spr_goblinwarrior_attack
     image_speed = 0.1
     if image_index =3 
     {

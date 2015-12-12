@@ -86,15 +86,20 @@
     <sprite>sprites\spr_trap</sprite>
     <sprite>sprites\spr_trapcollission</sprite>
     <sprite>sprites\spr_fire</sprite>
+    <sprite>sprites\spr_goblintodragon</sprite>
+    <sprite>sprites\spr_smoke</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_todragon</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_movetocastle.gml</script>
     <script>scripts\scr_orcmove.gml</script>
+    <script>scripts\scr_goblinmove.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -106,9 +111,11 @@
     </objects>
     <objects name="Enemy Related">
       <object>objects\obj_enemyparent</object>
-      <object>objects\obj_orc</object>
-      <object>objects\obj_orcattackanimation</object>
       <object>objects\obj_flame</object>
+      <objects name="Orc">
+        <object>objects\obj_orc</object>
+        <object>objects\obj_orcattackanimation</object>
+      </objects>
       <object>objects\obj_dragon</object>
       <object>objects\obj_dragon2</object>
       <object>objects\obj_dragon3</object>
@@ -189,6 +196,8 @@
       <object>objects\obj_flyingarrow</object>
       <object>objects\obj_firework</object>
     </objects>
+    <object>objects\obj_goblintodragon</object>
+    <object>objects\obj_smoke</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>
