@@ -206,10 +206,12 @@
       </objects>
       <object>objects\obj_flyingarrow</object>
       <object>objects\obj_firework</object>
+      <object>objects\obj_refpoint</object>
     </objects>
     <object>objects\obj_goblintodragon</object>
     <object>objects\obj_smoke</object>
     <object>objects\obj_goblinthief</object>
+    <object>objects\obj_goblinarcher</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>
