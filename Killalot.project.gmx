@@ -53,7 +53,11 @@
     </sprites>
     <sprites name="Items/Environment">
       <sprite>sprites\spr_ballista</sprite>
-      <sprite>sprites\spr_gold</sprite>
+      <sprites name="Coins">
+        <sprite>sprites\spr_coinsilver</sprite>
+        <sprite>sprites\spr_coinbronze</sprite>
+        <sprite>sprites\spr_coingold</sprite>
+      </sprites>
       <sprite>sprites\spr_jord</sprite>
       <sprite>sprites\spr_arrow</sprite>
       <sprite>sprites\spr_tree</sprite>
@@ -106,6 +110,7 @@
       <script>scripts\scr_lizardwalk.gml</script>
       <script>scripts\scr_lizardrun.gml</script>
     </scripts>
+    <script>scripts\scr_golddrop.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -124,10 +129,16 @@
       <objects name="GoblinWarrior">
         <object>objects\obj_goblin</object>
       </objects>
+      <objects name="Goblin Archer">
+        <object>objects\obj_goblinarcher</object>
+        <object>objects\obj_goblinarrow</object>
+      </objects>
       <objects name="LizardBrute">
         <object>objects\obj_lizardbrute</object>
       </objects>
+      <object>objects\obj_goblinthief</object>
       <object>objects\obj_dragon</object>
+      <object>objects\obj_goblintodragon</object>
       <object>objects\obj_dragon2</object>
       <object>objects\obj_dragon3</object>
       <object>objects\obj_fireball</object>
@@ -161,7 +172,12 @@
       </objects>
       <object>objects\obj_tower</object>
       <object>objects\obj_tree</object>
-      <object>objects\obj_gold</object>
+      <objects name="Goldcoins">
+        <object>objects\obj_gold</object>
+        <object>objects\obj_silvercoin</object>
+        <object>objects\obj_bronzecoin</object>
+        <object>objects\obj_goldcoin</object>
+      </objects>
       <object>objects\obj_arrow</object>
     </objects>
     <objects name="kims butik">
@@ -192,6 +208,7 @@
     <object>objects\obj_levelcompletet</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_enemygotocastle</object>
+    <object>objects\obj_smoke</object>
     <objects name="Obsolete">
       <objects name="storeitems martin">
         <objects name="castle">
@@ -208,10 +225,7 @@
       <object>objects\obj_firework</object>
       <object>objects\obj_refpoint</object>
     </objects>
-    <object>objects\obj_goblintodragon</object>
-    <object>objects\obj_smoke</object>
-    <object>objects\obj_goblinthief</object>
-    <object>objects\obj_goblinarcher</object>
+    <object>objects\obj_coingenerator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>

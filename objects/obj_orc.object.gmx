@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>event_inherited()
 
+mygold = 18
 hp = 3
 spd = 0.5
 
