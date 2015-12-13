@@ -29,10 +29,17 @@
 hp = 10
 //Choose between "idle" "run" "walk"
 state = "idle"
+
 findtarget = true
+//To make sure it only focuses on one target when enraged
 targetid = noone
+//Enraged charge damage
+enraged = 4
+
+
 
 y = obj_knightparent.y
+
 </string>
           </argument>
         </arguments>

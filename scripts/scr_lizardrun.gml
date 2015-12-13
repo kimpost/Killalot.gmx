@@ -13,14 +13,14 @@ findtarget = false
 }
 if instance_exists(targetid)
 {move_towards_point(targetid.x,targetid.y,spd)}
-if distance_to_object(targetid) <= 10 
-{
-    spd = 0
-    sprite_index = spr_lizardbrute_attack
-    image_speed = 0.1
-    if image_index =3 
+if place_meeting(x,y,targetid) 
     {
-    instance_create (x+10,y,obj_orcattackanimation)
-    }
-} 
+    state = "idle"
+    sprite_index = spr_lizard
+    targetid.hp += -enraged
+    /*
+    with (targetid)
+    {hp -= 3}*/ 
+    
+    } 
 }

@@ -26,13 +26,108 @@
           <argument>
             <kind>1</kind>
             <string>spd = 3
-hp = 4
+hp = 2
+
+//This is the maks amount of what they steal
+amountstolen = 500
 
 movetocastle = true
 havegold = false
 goldtaken = false
+getout = false
+direct = choose(0,180)
+havehit = false
 
 y = obj_knightparent.y
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>goldtaken = false
+getout = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>goldtaken = true
+if global.gold &gt;= amountstolen
+{global.gold += -amountstolen
+mygold = amountstolen} else {
+mygold = global.gold
+global.gold = 0}
+
+
+image_alpha = 1
+
+alarm[2] = 240
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_alpha = 0
+havegold = true
+movetocastle = true
+spd = 0
+image_xscale = image_xscale
+image_yscale = image_yscale
+y = y
+alarm[1] = 240
 </string>
           </argument>
         </arguments>
@@ -55,9 +150,31 @@ y = obj_knightparent.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if movetocastle = true
+            <string>if hp &lt;= 0
+{instance_destroy()}
+
+if movetocastle = true &amp;&amp; havegold = false
 {move_towards_point(obj_enemygotocastle.x,obj_enemygotocastle.y,spd)}
 
+if movetocastle = false
+{spd = 0
+image_xscale += -0.002
+image_yscale += -0.002
+y += -0.4}
+
+if goldtaken = true
+{
+image_xscale += 0.002
+image_yscale += 0.002
+y += 0.4
+}
+
+if getout = true
+{direction = direct
+spd = 3
+}
+
+/*
 if havegold = false &amp;&amp; !place_meeting(x,y,obj_playerparent)
 {spd = 3}
 
@@ -66,7 +183,7 @@ if havegold = true &amp;&amp; !place_meeting(x,y,obj_playerparent)
 
 if place_meeting(x,y,obj_playerparent)
 {spd = 0.5
-}
+}*/
 
 if direction = 0
     {
@@ -101,16 +218,18 @@ speed = spd
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if goldtaken = false 
-{
-spd = 0
+            <string>if movetocastle = true &amp;&amp; havehit = false
+{alarm[0] = 240
+movetocastle = false
+havehit = true
+}
+/*spd = 0
 image_xscale += -0.002
 image_yscale += -0.002
 y += -0.4
-}
 
-if movetocastle = true
-{movetocastle = false}
+
+
 </string>
           </argument>
         </arguments>
