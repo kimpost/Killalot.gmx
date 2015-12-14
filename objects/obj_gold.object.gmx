@@ -31,15 +31,43 @@ myvalue = 10
 
 //for how long should it fly?
 alarm[0] = 30
+//destroy time
+destroy = irandom_range(240,320)
+
+alarm[1] = destroy
 
 flying = true
 pickmeup = false
 
 image_speed = 0.2
+image_index = irandom(3)
 direct = random(choose(30,150))
 spd = random(choose(4,5))
 grav = random(choose(0.8,1))
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy()
 </string>
           </argument>
         </arguments>
