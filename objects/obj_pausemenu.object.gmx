@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,13 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gotocastle = false
+            <string>screen_save("screenshot.png")
+
+instance_deactivate_all(true)
+
+background = sprite_add("screenshot.png", 0, false, true,0,0)
+
+makemainmenucontrol = instance_create(x,y,obj_pausemenucontrol)
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,13 +54,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_golddrop(mygold))
+            <string>
+draw_sprite(background,0,0,0)
+draw_text(room_width/2,room_height/2,"I am paused... Happy now?")
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="11">
+    <event eventtype="9" enumb="80">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -71,54 +79,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if hp &lt;= 0
+            <string>instance_activate_all() 
+if file_exists("screenshot.png")
+{file_delete("screenshot.png")}
+with (obj_debug)
+{createpausemenu = true}
+with (makemainmenucontrol)
 {instance_destroy()}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemygotocastle">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>gotocastle = true
+instance_destroy()
 </string>
           </argument>
         </arguments>

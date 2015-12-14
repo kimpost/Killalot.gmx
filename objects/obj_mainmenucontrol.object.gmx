@@ -25,13 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>gotocastle = false
+            <string>option[0] = obj_menufight
+option[1] = obj_menuoptions
+
+number = 0
+
+
+alarm[0] = 2
+alarm[1] = 10
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
+    <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,13 +55,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(scr_golddrop(mygold))
+            <string>instance_create(650,900, option[1])
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="11">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -71,7 +78,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>instance_create(600,900, option[0])
 </string>
           </argument>
         </arguments>
@@ -94,31 +101,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp &lt;= 0
-{instance_destroy()}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemygotocastle">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>gotocastle = true
+            <string>/*if instance_exists(option[0]) &amp;&amp; number == 0
+{option[0].activated = 1
+if instance_exists(option[1])
+{option[1].activated = 0}} //else {option[0].activated = 0}
+
+if instance_exists(option[1]) &amp;&amp; number == 1
+{option[1].activated = 1
+option[0].activated = 0} //else {option[1].activated = 0}
+
+if number &lt;0
+{number = 0}
+
+if number &gt;1
+{number = 1}
 </string>
           </argument>
         </arguments>

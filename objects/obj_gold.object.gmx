@@ -32,7 +32,7 @@ myvalue = 10
 //for how long should it fly?
 alarm[0] = 30
 //destroy time
-destroy = irandom_range(240,320)
+destroy = irandom_range(1000,1500)
 
 alarm[1] = destroy
 

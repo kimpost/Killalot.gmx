@@ -79,6 +79,10 @@
         <sprite>sprites\spr_castleback</sprite>
       </sprites>
     </sprites>
+    <sprites name="Menu things">
+      <sprite>sprites\spr_menufight</sprite>
+      <sprite>sprites\spr_menuoption</sprite>
+    </sprites>
     <sprite>sprites\spr_levelcomplete</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_firework</sprite>
@@ -170,14 +174,14 @@
         <object>objects\obj_archerarms</object>
         <object>objects\obj_archerarrow</object>
       </objects>
-      <object>objects\obj_tower</object>
-      <object>objects\obj_tree</object>
       <objects name="Goldcoins">
         <object>objects\obj_gold</object>
         <object>objects\obj_silvercoin</object>
         <object>objects\obj_bronzecoin</object>
         <object>objects\obj_goldcoin</object>
       </objects>
+      <object>objects\obj_tower</object>
+      <object>objects\obj_tree</object>
       <object>objects\obj_arrow</object>
     </objects>
     <objects name="kims butik">
@@ -202,6 +206,13 @@
         <object>objects\obj_castleghost</object>
         <object>objects\obj_archerghost</object>
       </objects>
+    </objects>
+    <objects name="Menu Control">
+      <object>objects\obj_mainmenucontrol</object>
+      <object>objects\obj_menuoptions</object>
+      <object>objects\obj_menufight</object>
+      <object>objects\obj_pausemenucontrol</object>
+      <object>objects\obj_pausemenu</object>
     </objects>
     <object>objects\obj_jord</object>
     <object>objects\obj_debug</object>
@@ -228,6 +239,7 @@
     <object>objects\obj_coingenerator</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start</room>
     <room>rooms\test</room>
     <room>rooms\rm_lvl1</room>
   </rooms>

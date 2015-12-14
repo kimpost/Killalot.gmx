@@ -29,6 +29,7 @@
 hp = 2
 spd = 0.5
 canshoot = true
+mygold = 100
 
 //Choose between states. "walk" "shoot"
 state = "walk"
@@ -105,7 +106,9 @@ canshoot = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if state = "walk" 
+            <string>event_inherited()
+
+if state = "walk" 
 {
 spd = 0.5
 if instance_exists(obj_enemygotocastle) &amp;&amp; distance_to_object(obj_enemygotocastle) &gt;= 50
