@@ -220,6 +220,7 @@
     <object>objects\obj_gameover</object>
     <object>objects\obj_enemygotocastle</object>
     <object>objects\obj_smoke</object>
+    <object>objects\obj_coingenerator</object>
     <objects name="Obsolete">
       <objects name="storeitems martin">
         <objects name="castle">
@@ -236,7 +237,6 @@
       <object>objects\obj_firework</object>
       <object>objects\obj_refpoint</object>
     </objects>
-    <object>objects\obj_coingenerator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

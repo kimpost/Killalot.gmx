@@ -28,6 +28,7 @@
             <string>event_inherited()
 hp = 1
 spd = 1
+mygold = 65
 
 //hspeed = 0.6
 y = (obj_knightparent.y)
@@ -55,10 +56,7 @@ y = (obj_knightparent.y)
           <argument>
             <kind>1</kind>
             <string>if gotocastle = false
-{if irandom(2) = 0
-    {
-    instance_create (x,y,obj_gold)
-    }
+{script_execute(scr_golddrop)
 } 
 else
 {
