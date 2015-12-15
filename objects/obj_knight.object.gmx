@@ -35,6 +35,8 @@ blocked = false
 
 movetoattack = false
 
+move = false
+
 imagexscale = 1
 
 walkspeed = 5
@@ -42,6 +44,12 @@ walkspeed = 5
 hp = 3
 
 y = 624
+
+//Choose states "idle" "blocking" "run" "runattack"
+state = "idle"
+//How long before runattack can happen?
+runtimertime = 60
+runtimer = 0
 </string>
           </argument>
         </arguments>
@@ -89,6 +97,30 @@ instance_create (x,y,obj_knightdeath)
             <kind>1</kind>
             <string>instance_create(x = +512,y = +384,obj_gameover)
     
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>runtimertime = 0
+state = "idle"
 </string>
           </argument>
         </arguments>
@@ -187,36 +219,53 @@ moveleft = keyboard_check(vk_left)
 moveright = keyboard_check(vk_right)
 block = keyboard_check_pressed(vk_up)
 
+/*if state != "runattack" &amp;&amp; moveleft || moveright  
+{state = "run"
+script_execute(scr_knightrun)}
+
+if attack &amp;&amp; canattack = true &amp;&amp; state != "runattack"
+{state = "attack"
+script_execute(scr_knightattack)}
+*/
+
 
 if moveleft &amp;&amp; movetoattack = false
     {
+    move = true
     imagexscale = -1
     x -= walkspeed
     image_xscale = imagexscale
     sprite_index = spr_knight_run
     image_speed = 0.3
-    }
+    runtimer += 1
+    } 
     
 if moveright &amp;&amp; movetoattack = false
     {
+    move = true
     imagexscale = 1
     x += walkspeed
     image_xscale = imagexscale
     sprite_index = spr_knight_run
     image_speed = 0.3
+    runtimer += 1
     }
-    
+
+//if !moveleft || !moveright
+//{move = false}
+
 x = min(x,room_width-16)
 x = max(x,16)
 
-if attack &amp;&amp; canattack = true
-    {if moveleft || moveright
+if attack &amp;&amp; canattack = true 
+    {if moveleft &amp;&amp; runtimer &gt;= runtimertime || moveright &amp;&amp; runtimer &gt;= runtimertime
     {movetoattack = true
     sprite_index = spr_knight_runattack
     image_speed = 0.2
     alarm[1] = 15
+    runtimer = 0
     } else    
-    {if movetoattack = false
+    {if movetoattack = false &amp;&amp; move = false
     {
     sprite_index = spr_knightattack
     image_speed = 0.2
@@ -225,16 +274,20 @@ if attack &amp;&amp; canattack = true
     var animation;
     animation = instance_create(x,y,obj_knightattackanimation)
     animation.imagexscale = imagexscale
-    }}}
+    runtimer = 0
+    }}} 
 
-if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; canattack = true
+if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; canattack = true &amp;&amp; blocked = false
 {sprite_index = spr_knightidle
-    image_speed = 0.03}
+    image_speed = 0.03
+    runtimer = 0
+    move = false}
 
 if block
 {blocked = true
+sprite_index = spr_knightblock
 if alarm[2] = -1
-{alarm[2] = 30}}
+{alarm[2] = 120}}
 
 if sprite_index = spr_knightattack &amp;&amp; image_index &gt;=3
     {
@@ -285,6 +338,30 @@ if hp &lt;= 0
         instance_destroy()
         }
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(100, 100, runtimer)
+draw_self()
 </string>
           </argument>
         </arguments>

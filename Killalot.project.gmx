@@ -14,6 +14,7 @@
       <sprite>sprites\spr_knight_runattack</sprite>
       <sprite>sprites\spr_knightidle</sprite>
       <sprite>sprites\spr_knight_run</sprite>
+      <sprite>sprites\spr_knightblock</sprite>
       <sprite>sprites\spr_knigtdeath</sprite>
     </sprites>
     <sprites name="Enemy Related">
@@ -115,6 +116,9 @@
       <script>scripts\scr_lizardrun.gml</script>
     </scripts>
     <script>scripts\scr_golddrop.gml</script>
+    <script>scripts\scr_knightrun.gml</script>
+    <script>scripts\scr_knightrunattack.gml</script>
+    <script>scripts\scr_knightattack.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">
