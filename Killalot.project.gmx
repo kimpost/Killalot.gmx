@@ -243,8 +243,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
     <room>rooms\test</room>
+    <room>rooms\rm_start</room>
     <room>rooms\rm_lvl1</room>
   </rooms>
   <help>
