@@ -15,9 +15,10 @@ if instance_exists(targetid)
 {move_towards_point(targetid.x,targetid.y,spd)}
 if place_meeting(x,y,targetid) 
     {
-    state = "idle"
+    state = "ragehit"
     sprite_index = spr_lizard
-    targetid.hp += -enraged
+    if target.blocked != true
+    {targetid.hp += -enraged}
     /*
     with (targetid)
     {hp -= 3}*/ 

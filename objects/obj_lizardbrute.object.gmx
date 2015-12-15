@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>spd = 0
 hp = 10
-//Choose between "idle" "run" "walk"
+//Choose between "idle" "run" "walk" "ragehit"
 state = "idle"
 
 findtarget = true
@@ -36,10 +36,35 @@ targetid = noone
 //Enraged charge damage
 enraged = 4
 
+mygold = 213
+
 
 
 y = obj_knightparent.y
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = choose("idle", "run","walk")
 </string>
           </argument>
         </arguments>
@@ -145,6 +170,9 @@ if state = "walk"
 
 if state = "run"
 {script_execute(scr_lizardrun)}
+
+if state = "ragehit"
+{script_execute(scr_lizardragehit)}
 
 if direction = 0
     {

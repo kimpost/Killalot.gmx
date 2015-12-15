@@ -10,7 +10,6 @@
       <sprite>sprites\spr_knight</sprite>
       <sprite>sprites\spr_knightattack</sprite>
       <sprite>sprites\spr_knightattackanimation</sprite>
-      <sprite>sprites\lll</sprite>
       <sprite>sprites\spr_knight_runattack</sprite>
       <sprite>sprites\spr_knightidle</sprite>
       <sprite>sprites\spr_knight_run</sprite>
@@ -22,25 +21,23 @@
         <sprite>sprites\spr_orc</sprite>
         <sprite>sprites\spr_orc_run</sprite>
         <sprite>sprites\spr_orcattack</sprite>
+        <sprite>sprites\spr_orcattackanimation</sprite>
       </sprites>
-      <sprite>sprites\spr_flame</sprite>
-      <sprite>sprites\spr_orcattackanimation</sprite>
-      <sprite>sprites\spr_fireball</sprite>
       <sprites name="Dragon">
         <sprite>sprites\spr_dragon_fly</sprite>
       </sprites>
-      <sprite>sprites\spr_goblingjumpingplatform</sprite>
       <sprites name="Goblinarcher">
         <sprite>sprites\spr_goblinarcher</sprite>
         <sprite>sprites\spr_goblinarcher_shoot</sprite>
         <sprite>sprites\spr_goblinarcher_run</sprite>
+        <sprite>sprites\spr_goblinarcher_idle</sprite>
       </sprites>
       <sprites name="Goblin Warrior">
         <sprite>sprites\spr_goblinwarrior</sprite>
         <sprite>sprites\spr_goblinwarrior_attack</sprite>
+        <sprite>sprites\spr_goblinattackanimation</sprite>
         <sprite>sprites\spr_goblinwarrior_run</sprite>
       </sprites>
-      <sprite>sprites\spr_goblingparachute</sprite>
       <sprites name="Goblin Thief">
         <sprite>sprites\spr_goblinthief</sprite>
         <sprite>sprites\spr_goblinthief_run</sprite>
@@ -49,8 +46,14 @@
         <sprite>sprites\spr_lizard</sprite>
         <sprite>sprites\spr_lizardbrute_run</sprite>
         <sprite>sprites\spr_lizardbrute_attack</sprite>
+        <sprite>sprites\spr_lizardbrute_ragehit</sprite>
         <sprite>sprites\spr_lizardbrute_walk</sprite>
+        <sprite>sprites\spr_lizardbrute_idle</sprite>
       </sprites>
+      <sprite>sprites\spr_goblingparachute</sprite>
+      <sprite>sprites\spr_fireball</sprite>
+      <sprite>sprites\spr_flame</sprite>
+      <sprite>sprites\spr_goblingjumpingplatform</sprite>
     </sprites>
     <sprites name="Items/Environment">
       <sprite>sprites\spr_ballista</sprite>
@@ -114,6 +117,7 @@
       <script>scripts\scr_lizardidle.gml</script>
       <script>scripts\scr_lizardwalk.gml</script>
       <script>scripts\scr_lizardrun.gml</script>
+      <script>scripts\scr_lizardragehit.gml</script>
     </scripts>
     <script>scripts\scr_golddrop.gml</script>
     <script>scripts\scr_knightrun.gml</script>
@@ -136,6 +140,7 @@
       </objects>
       <objects name="GoblinWarrior">
         <object>objects\obj_goblin</object>
+        <object>objects\obj_goblinattackanimation</object>
       </objects>
       <objects name="Goblin Archer">
         <object>objects\obj_goblinarcher</object>

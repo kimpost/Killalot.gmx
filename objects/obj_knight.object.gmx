@@ -296,6 +296,7 @@ script_execute(scr_knightattack)}
 
 if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true
     {
+    blocked = false
     move = true
     imagexscale = -1
     x -= walkspeed
@@ -307,6 +308,7 @@ if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true
     
 if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true
     {
+    blocked = false
     move = true
     imagexscale = 1
     x += walkspeed
@@ -359,11 +361,11 @@ if attack &amp;&amp; canattack = true
     runtimer = 0
     }}}} 
 
-if block
-{blocked = true
+if block &amp;&amp; blocked = false
+{alarm[2] = blockingtime
+blocked = true
 sprite_index = spr_knightblock
-if alarm[2] = -1
-{alarm[2] = blockingtime}}
+}
 
     
 if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; blocked = false &amp;&amp; attacking = false

@@ -28,15 +28,39 @@
             <string>event_inherited()
 hp = 2
 spd = 0.5
-canshoot = true
+canshoot = false
 mygold = 100
 
 //Choose between states. "walk" "shoot"
 state = "walk"
 //How fast can it shoot?
-shoottime = 120
+shoottime = 240
 
 y = obj_enemygotocastle.y
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///state = choose("shoot","walk")
+state = choose("shoot","walk")
 </string>
           </argument>
         </arguments>
@@ -83,7 +107,8 @@ canshoot = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = choose("shoot","walk")
+            <string>///state = choose("idle","shoot""walk")
+state = choose("idle","shoot","walk")
 </string>
           </argument>
         </arguments>
@@ -110,6 +135,8 @@ canshoot = true
 
 if state = "walk" 
 {
+sprite_index = spr_goblinarcher_run
+image_speed = 0.2
 spd = 0.5
 if instance_exists(obj_enemygotocastle) &amp;&amp; distance_to_object(obj_enemygotocastle) &gt;= 50
 {move_towards_point(obj_enemygotocastle.x,obj_enemygotocastle.y,spd)}
@@ -117,9 +144,11 @@ if alarm[0] = -1
 {alarm[0] = 120}}
 
 if state = "shoot"
-{spd = 0
-if alarm[0] = -1
-{alarm[0] = 120}
+{sprite_index = spr_goblinarcher_shoot
+image_speed = 0.01
+spd = 0
+if alarm[1] = -1 &amp;&amp; canshoot = false
+{alarm[1] = shoottime}
 if instance_exists(obj_knight) || instance_exists(obj_archer)
 {var nearest, nearest1;
 nearest = instance_nearest(x,y,obj_archer)
@@ -137,14 +166,21 @@ if canshoot = true
 //shoot = instance_create(x +lengthdir_x(10,image_angle), y +lengthdir_y(10,image_angle),obj_archerarrow)
 shoot = instance_create(x , y-30 ,obj_goblinarrow)
 shoot.target = chosen
-alarm[1] = shoottime
 canshoot = false
+state = "idle"
 }
 }
 }
 }
 
-
+if state = "idle"
+{
+spd = 0
+sprite_index = spr_goblinarcher_idle
+image_speed = 0.1
+if alarm[2] = -1
+{alarm[2] = 60}
+}
 
 speed = spd
 

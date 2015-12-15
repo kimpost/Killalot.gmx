@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0.5
+xscale = noone
 </string>
           </argument>
         </arguments>
@@ -48,10 +49,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_index = 9
+            <string>image_xscale = xscale
+
+if image_index &gt;= 4
     {
     instance_destroy()
     }
+    
 </string>
           </argument>
         </arguments>

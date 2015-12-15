@@ -155,7 +155,9 @@ alarm[1] = 240
 {instance_destroy()}
 
 if movetocastle = true &amp;&amp; havegold = false
-{move_towards_point(obj_enemygotocastle.x,obj_enemygotocastle.y,spd)}
+{move_towards_point(obj_enemygotocastle.x,obj_enemygotocastle.y,spd)
+sprite_index = spr_goblinthief_run
+image_speed = 0.3}
 
 if movetocastle = false
 {spd = 0
