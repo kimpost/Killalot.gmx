@@ -294,7 +294,7 @@ script_execute(scr_knightattack)}
 */
 
 
-if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true
+if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
@@ -306,7 +306,7 @@ if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true
     runtimer += 1
     } 
     
-if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true
+if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
@@ -324,7 +324,7 @@ if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true
 x = min(x,room_width-16)
 x = max(x,16)
 
-if attack &amp;&amp; canattack = true 
+if attack &amp;&amp; canattack = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {if moveleft &amp;&amp; runtimer &gt;= runtimertime || moveright &amp;&amp; runtimer &gt;= runtimertime
     {movetoattack = true
     sprite_index = spr_knight_runattack
@@ -361,14 +361,14 @@ if attack &amp;&amp; canattack = true
     runtimer = 0
     }}}} 
 
-if block &amp;&amp; blocked = false
+if block &amp;&amp; blocked = false &amp;&amp; state != "dead" &amp;&amp; state != "down"
 {alarm[2] = blockingtime
 blocked = true
 sprite_index = spr_knightblock
 }
 
     
-if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; blocked = false &amp;&amp; attacking = false
+if !attack &amp;&amp; !moveleft &amp;&amp; !moveright &amp;&amp; blocked = false &amp;&amp; attacking = false &amp;&amp; state != "dead" &amp;&amp; state != "down"
 //{ if sprite_index = spr_knightattack &amp;&amp; image_number == -1 
 {sprite_index = spr_knightidle
     image_speed = 0.03
@@ -393,11 +393,22 @@ if havearrow = true &amp;&amp; distance_to_object(ballista) &lt;= 10 &amp;&amp; 
 havearrow = false
 }
 
-if hp &lt;= 0
+if hp == 1
+{state = "down"
+} 
+
+if state == "down"
+{script_execute(scr_knightdown)
+}
+
+if hp &lt;= 0 &amp;&amp; state != "down"
     {
-    instance_destroy()
-    instance_create(x,y,obj_knightdeath)
+    state = "dead"
     }
+    
+if state == "dead"
+{script_execute(scr_knightdead)
+}
 </string>
           </argument>
         </arguments>

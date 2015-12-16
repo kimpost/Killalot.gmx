@@ -14,7 +14,10 @@
       <sprite>sprites\spr_knightidle</sprite>
       <sprite>sprites\spr_knight_run</sprite>
       <sprite>sprites\spr_knightblock</sprite>
-      <sprite>sprites\spr_knigtdeath</sprite>
+      <sprite>sprites\spr_knightdowned</sprite>
+      <sprite>sprites\spr_knightdownedcrawl</sprite>
+      <sprite>sprites\spr_knightdeath</sprite>
+      <sprite>sprites\spr_knightdowndeath</sprite>
     </sprites>
     <sprites name="Enemy Related">
       <sprites name="Orc">
@@ -120,16 +123,22 @@
       <script>scripts\scr_lizardragehit.gml</script>
     </scripts>
     <script>scripts\scr_golddrop.gml</script>
-    <script>scripts\scr_knightrun.gml</script>
-    <script>scripts\scr_knightrunattack.gml</script>
-    <script>scripts\scr_knightattack.gml</script>
+    <scripts name="Knight">
+      <script>scripts\scr_knightdown.gml</script>
+      <script>scripts\scr_knightdead.gml</script>
+      <scripts name="Not used">
+        <script>scripts\scr_knightrunattack.gml</script>
+        <script>scripts\scr_knightattack.gml</script>
+        <script>scripts\scr_knightrun.gml</script>
+      </scripts>
+    </scripts>
+    <script>scripts\scr_lizardattack.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_playerparent</object>
       <object>objects\obj_knightparent</object>
       <object>objects\obj_knightattackanimation</object>
-      <object>objects\obj_knightdeath</object>
       <object>objects\obj_knight</object>
     </objects>
     <objects name="Enemy Related">

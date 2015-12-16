@@ -10,7 +10,7 @@ image_speed = 0.2
 if distance_to_object(target) <= 10 && canattack = true
 {
     canmove = false
-    speed = 0
+    spd = 0
     sprite_index = spr_orcattack
     image_speed = 0.1
     var damage;

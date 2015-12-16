@@ -27,21 +27,54 @@
             <kind>1</kind>
             <string>spd = 0
 hp = 10
-//Choose between "idle" "run" "walk" "ragehit"
+//Choose between "idle" "run" "walk" "ragehit" "attack"
 state = "idle"
+canmove = true
 
 findtarget = true
+//a variable passed along from scr_lizardwalk, to continue the scr_lizardattack
+//lockedtarget = noone
 //To make sure it only focuses on one target when enraged
 targetid = noone
 //Enraged charge damage
 enraged = 4
 
+//An xscale to pass along to created objects and to see xscale in general
+xscale = noone
+
 mygold = 213
+
+canattack = true
 
 
 
 y = obj_knightparent.y
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//canmove = true
+canattack = true
+state = choose("idle", "run","walk")
 </string>
           </argument>
         </arguments>
@@ -64,7 +97,8 @@ y = obj_knightparent.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = choose("idle", "run","walk")
+            <string>///state = choose("idle", "run","walk")
+state = choose("idle", "run","walk")
 </string>
           </argument>
         </arguments>
@@ -174,13 +208,18 @@ if state = "run"
 if state = "ragehit"
 {script_execute(scr_lizardragehit)}
 
+if state = "attack"
+{script_execute(scr_lizardattack)}
+
 if direction = 0
     {
+    xscale = 1
     image_xscale = 1
     }
     
 if direction = 180
     {
+    xscale = -1
     image_xscale = -1
     }
 </string>
