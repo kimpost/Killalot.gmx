@@ -71,53 +71,6 @@ state = "idle"
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//brændende død efter drageangrev//
-instance_create (x,y,obj_knightdeath)
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x = +512,y = +384,obj_gameover)
-    
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="11">
       <action>
         <libid>1</libid>
@@ -135,7 +88,7 @@ instance_create (x,y,obj_knightdeath)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>runtimertime = 0
+            <string>/*runtimertime = 0
 state = "idle"
 </string>
           </argument>
@@ -160,7 +113,55 @@ state = "idle"
           <argument>
             <kind>1</kind>
             <string>///canmove = true
-canmove = true
+//canmove = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///hp -- if down and no enemies are around, kill knight
+hp --
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///room_goto(rm_start) IF DEAD, MOVE ALONG
+room_goto(rm_start)
 </string>
           </argument>
         </arguments>
@@ -183,7 +184,8 @@ canmove = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attacking = false
+            <string>///attacking = false ATTACK ALARM
+attacking = false
 </string>
           </argument>
         </arguments>
@@ -206,7 +208,8 @@ canmove = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>blocked = false
+            <string>///blocked = false BLOCK ALARM
+blocked = false
 </string>
           </argument>
         </arguments>
@@ -229,7 +232,7 @@ canmove = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movetoattack = false
+            <string>///movetoattack = false (ATTACK ALARM)
 movetoattack = false
 </string>
           </argument>
@@ -253,7 +256,7 @@ movetoattack = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///canattack = true
+            <string>///canattack = true ATTACK ALARM
 canattack = true
 
 </string>
@@ -294,7 +297,7 @@ script_execute(scr_knightattack)}
 */
 
 
-if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
+if moveleft &amp;&amp; movetoattack = false  /*&amp;&amp; canmove = true*/ &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
@@ -306,7 +309,7 @@ if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true &amp;&amp
     runtimer += 1
     } 
     
-if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
+if moveright &amp;&amp; movetoattack = false /*&amp;&amp; canmove = true*/ &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
@@ -462,6 +465,8 @@ if state == "dead"
           <argument>
             <kind>1</kind>
             <string>draw_text(100, 100, runtimer)
+if hp &lt;= 0
+{draw_sprite_ext( spr_gameover, -1, room_width/2, room_height/2,1 ,image_yscale ,0 ,c_white , 1 )}
 draw_self()
 </string>
           </argument>

@@ -23,12 +23,17 @@ if moveright && hp >= 1 //&& movetoattack = false && canmove = true
     }
     
 if !moveleft && !moveright && hp >= 1 && state != "dead"
-    {sprite_index = spr_knightdowned
+    {
+    if alarm[5] = -1
+    {alarm[5] = 320}
+    sprite_index = spr_knightdowned
     image_speed = 0.02
     blocked = false}
     
 if hp <= 0 && state != "dead"
-{sprite_index = spr_knightdowndeath
+{if alarm[4] = -1
+{alarm[4] = 240} 
+sprite_index = spr_knightdowndeath
     image_speed = 0.1
     blocked = false
     if image_index >= 10

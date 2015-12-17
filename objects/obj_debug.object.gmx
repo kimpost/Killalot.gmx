@@ -56,6 +56,54 @@ createpausemenu = true
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rm_start)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if castlehealth &lt;= 0
+{if alarm[0] = -1
+{alarm[0] = 240}} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="109">
       <action>
         <libid>1</libid>
@@ -193,6 +241,8 @@ room_goto_next()
             <string>draw_text(room_width/2,700, "Gold: " +string (gold)) 
 draw_text(room_width/2,730, "Castle Health: " +string (castlehealth)) 
 
+if instance_exists(obj_castleback)
+{
 if castlehealth &lt;= 4
 {draw_sprite_ext( spr_fire, -1, obj_castleback.x -40, obj_castleback.y -40,image_xscale ,image_yscale ,0 ,c_white , 1 )}
 if castlehealth &lt;= 3
@@ -201,6 +251,7 @@ if castlehealth &lt;= 1
 {draw_sprite_ext( spr_fire, -1, obj_castleback.x -10, obj_castleback.y -10,image_xscale ,image_yscale ,0 ,c_white , 1 )}
 if castlehealth &lt;= 0
 {draw_sprite_ext( spr_gameover, -1, room_width/2, room_height/2,image_xscale ,image_yscale ,0 ,c_white , 1 )}
+}
 </string>
           </argument>
         </arguments>
