@@ -4,10 +4,10 @@ if instance_exists(obj_playerparent)
 target = instance_nearest(x,y,obj_playerparent)
 if instance_exists(target) && canmove = true
 {move_towards_point(target.x,target.y,spd)}
-if canmove = true
+if canmove = true && damaged = false
 {sprite_index = spr_orc_run
 image_speed = 0.2
-if distance_to_object(target) <= 10 && canattack = true
+if distance_to_object(target) <= 10 && canattack = true && damaged = false
 {
     canmove = false
     speed = 0

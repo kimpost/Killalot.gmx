@@ -104,6 +104,7 @@
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_goblintodragon</sprite>
     <sprite>sprites\spr_smoke</sprite>
+    <sprite>sprites\spr_orc_damaged</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -133,6 +134,7 @@
       </scripts>
     </scripts>
     <script>scripts\scr_lizardattack.gml</script>
+    <script>scripts\scr_enemydamaged.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="Player">

@@ -87,9 +87,10 @@ if image_index &gt;= 4
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if candamage = true
+            <string>if candamage == true &amp;&amp; other.damaged == false
     {
     other.hp -= 1
+    other.damaged = true
     candamage = false
     instance_destroy()
     }
