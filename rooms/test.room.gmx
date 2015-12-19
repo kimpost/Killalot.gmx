@@ -68,6 +68,15 @@
     <instance objName="obj_goblintodragon" x="-128" y="592" name="inst_2C95A715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="1200" y="608" name="inst_F1BC6430" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="1264" y="592" name="inst_F57CBF2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblin" x="-208" y="640" name="inst_305367EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblin" x="-112" y="640" name="inst_B7AF8945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lizardbrute" x="-288" y="624" name="inst_5DE0CC8B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinarcher" x="1136" y="592" name="inst_57F5EDFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinarcher" x="1328" y="592" name="inst_7703896E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinthief" x="2448" y="560" name="inst_D52253A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinthief" x="2720" y="544" name="inst_46125427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinthief" x="-1840" y="624" name="inst_3213D1D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_goblinthief" x="-1552" y="624" name="inst_6CF4EEB5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

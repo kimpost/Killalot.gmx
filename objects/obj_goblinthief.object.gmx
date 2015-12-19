@@ -31,6 +31,7 @@ hp = 2
 //This is the maks amount of what they steal
 amountstolen = 500
 mygold = 0
+damaged = false
 
 movetocastle = true
 havegold = false

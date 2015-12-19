@@ -31,6 +31,8 @@ hp = 10
 state = "idle"
 canmove = true
 
+damaged = false
+
 findtarget = true
 //a variable passed along from scr_lizardwalk, to continue the scr_lizardattack
 //lockedtarget = noone

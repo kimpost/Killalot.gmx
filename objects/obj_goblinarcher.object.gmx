@@ -36,6 +36,9 @@ state = "walk"
 //How fast can it shoot?
 shoottime = 240
 
+damaged = false
+
+
 y = obj_enemygotocastle.y
 </string>
           </argument>

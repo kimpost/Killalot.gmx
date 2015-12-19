@@ -31,6 +31,7 @@ canattack = true
 mygold = 65
 hp = 1
 spd = 1
+damaged = false
 
 
 //An xscale to pass along to created objects and to see xscale in general
