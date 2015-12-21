@@ -70,7 +70,6 @@
     <instance objName="obj_orc" x="1264" y="608" name="inst_F57CBF2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goblin" x="-208" y="640" name="inst_305367EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goblin" x="-112" y="640" name="inst_B7AF8945" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_playerparent" x="704" y="800" name="inst_7634859D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="1488" y="608" name="inst_9EDB632B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="1392" y="608" name="inst_C6BC013B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_place" x="96" y="624" name="inst_1DE3A62A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

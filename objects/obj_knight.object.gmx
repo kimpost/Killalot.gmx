@@ -113,7 +113,7 @@ state = "idle"
           <argument>
             <kind>1</kind>
             <string>///canmove = true
-//canmove = true
+canmove = true
 </string>
           </argument>
         </arguments>
@@ -297,7 +297,7 @@ script_execute(scr_knightattack)}
 */
 
 
-if moveleft &amp;&amp; movetoattack = false  /*&amp;&amp; canmove = true*/ &amp;&amp; state != "down" &amp;&amp; state != "dead"
+if moveleft &amp;&amp; movetoattack = false  &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
@@ -309,7 +309,7 @@ if moveleft &amp;&amp; movetoattack = false  /*&amp;&amp; canmove = true*/ &amp;
     runtimer += 1
     } 
     
-if moveright &amp;&amp; movetoattack = false /*&amp;&amp; canmove = true*/ &amp;&amp; state != "down" &amp;&amp; state != "dead"
+if moveright &amp;&amp; movetoattack = false &amp;&amp; canmove = true &amp;&amp; state != "down" &amp;&amp; state != "dead"
     {
     blocked = false
     move = true
