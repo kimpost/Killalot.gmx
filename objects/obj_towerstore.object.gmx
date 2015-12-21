@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>price = 2000
+            <string>price = 5
 </string>
           </argument>
         </arguments>
@@ -110,7 +110,9 @@ with(obj_placetowerright)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(obj_place)
+            <string>if global.gold &gt;= price
+    {
+with(obj_place)
      {        
     visible = true
      }  
@@ -125,6 +127,9 @@ with(obj_placetowerright)
     visible = true
      }       
 instance_create(x,y,obj_towerghost)
+    }
+
+
 </string>
           </argument>
         </arguments>

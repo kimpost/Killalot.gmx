@@ -55,6 +55,7 @@ instance_create(x,y-100,obj_placeballistaorarcher)
           <argument>
             <kind>1</kind>
             <string>instance_create (x,y,obj_place)
+instance_create (x,y-64,obj_towerdestroyarcherandballista)
 </string>
           </argument>
         </arguments>

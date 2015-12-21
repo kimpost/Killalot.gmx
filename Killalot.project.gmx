@@ -181,6 +181,7 @@
         <object>objects\obj_ballistatop</object>
         <object>objects\obj_ballista</object>
         <object>objects\obj_flyingarrowbackup</object>
+        <object>objects\obj_arrow</object>
         <object>objects\obj_ballistamouseshooter</object>
       </objects>
       <objects name="castle+">
@@ -188,6 +189,7 @@
         <object>objects\obj_castle</object>
         <object>objects\obj_towerleft</object>
         <object>objects\obj_castleback</object>
+        <object>objects\obj_tower</object>
       </objects>
       <objects name="Archer">
         <object>objects\obj_archer</object>
@@ -200,9 +202,7 @@
         <object>objects\obj_bronzecoin</object>
         <object>objects\obj_goldcoin</object>
       </objects>
-      <object>objects\obj_tower</object>
       <object>objects\obj_tree</object>
-      <object>objects\obj_arrow</object>
     </objects>
     <objects name="kims butik">
       <object>objects\obj_castlestore</object>
@@ -219,6 +219,8 @@
         <object>objects\obj_placetowerlocationmarker</object>
         <object>objects\obj_placeballistalocationmarker</object>
         <object>objects\obj_placearcherlocationmarker</object>
+        <object>objects\obj_towerdestroyarcherandballista</object>
+        <object>objects\obj_ballistadestroyballistatop</object>
       </objects>
       <objects name="ghosts">
         <object>objects\obj_ballistaghost</object>
