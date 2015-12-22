@@ -211,6 +211,7 @@
     <objects name="kims butik">
       <object>objects\obj_castlestore</object>
       <object>objects\obj_towerstore</object>
+      <object>objects\obj_trapstore</object>
       <object>objects\obj_ballistastore</object>
       <object>objects\obj_notenoughgold</object>
       <object>objects\obj_archerstore</object>
@@ -221,6 +222,7 @@
         <object>objects\obj_placetowerleft</object>
         <object>objects\obj_placetowerright</object>
         <object>objects\obj_placetowerlocationmarker</object>
+        <object>objects\obj_placetraplocationmarker</object>
         <object>objects\obj_placeballistalocationmarker</object>
         <object>objects\obj_placearcherlocationmarker</object>
         <object>objects\obj_towerdestroyarcherandballista</object>
@@ -231,6 +233,7 @@
         <object>objects\obj_towerghost</object>
         <object>objects\obj_castleghost</object>
         <object>objects\obj_archerghost</object>
+        <object>objects\obj_trapghost</object>
       </objects>
     </objects>
     <objects name="Menu Control">
