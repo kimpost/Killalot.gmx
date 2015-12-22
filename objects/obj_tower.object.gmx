@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 5
+            <string>event_inherited()
+
+hp = 5
 
 y = obj_castleback.y
 
@@ -78,7 +80,8 @@ instance_create (x,y-64,obj_towerdestroyarcherandballista)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if hp &lt;= 0 {instance_destroy()}
+            <string>event_inherited()
+if hp &lt;= 0 {instance_destroy()}
 </string>
           </argument>
         </arguments>

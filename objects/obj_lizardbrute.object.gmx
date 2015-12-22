@@ -31,7 +31,17 @@ hp = 3
 state = "idle"
 canmove = true
 
+//Theese are the ones calling the damaged sprite through csr_enemydamaged
+//Remember the draw event for alpha state
 damaged = false
+//for how long is the damaged state active?
+damagedtime = 80
+fadein = false 
+alphavalue = 1
+fadeout = true
+//Enter the enemies damage sprite here
+mydamagedsprite = spr_lizard_damaged
+//////////////End of damaged state////////////////////
 
 findtarget = true
 //a variable passed along from scr_lizardwalk, to continue the scr_lizardattack
@@ -213,6 +223,9 @@ if state = "ragehit"
 if state = "attack"
 {script_execute(scr_lizardattack)}
 
+if damaged = true
+{script_execute(scr_enemydamaged)}
+
 if direction = 0
     {
     xscale = 1
@@ -246,7 +259,12 @@ if direction = 180
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(100, 120, hp)
+            <string>
+draw_text(100, 120, hp)
+
+//For the damaged state
+image_alpha = alphavalue
+
 draw_self()
 </string>
           </argument>

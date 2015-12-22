@@ -7,7 +7,7 @@ if instance_exists(target) && canmove = true
 if canmove = true
 {sprite_index = spr_goblinwarrior_run
 image_speed = 0.2
-if distance_to_object(target) <= 10 && canattack = true
+if distance_to_object(target) <= 5 && canattack = true
 {
     canmove = false
     speed = 0

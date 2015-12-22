@@ -24,6 +24,7 @@
         <sprite>sprites\spr_orc</sprite>
         <sprite>sprites\spr_orc_run</sprite>
         <sprite>sprites\spr_orcattack</sprite>
+        <sprite>sprites\spr_orc_damaged</sprite>
         <sprite>sprites\spr_orcattackanimation</sprite>
       </sprites>
       <sprites name="Dragon">
@@ -33,6 +34,7 @@
         <sprite>sprites\spr_goblinarcher</sprite>
         <sprite>sprites\spr_goblinarcher_shoot</sprite>
         <sprite>sprites\spr_goblinarcher_run</sprite>
+        <sprite>sprites\spr_goblinarcher_damaged</sprite>
         <sprite>sprites\spr_goblinarcher_idle</sprite>
       </sprites>
       <sprites name="Goblin Warrior">
@@ -40,10 +42,12 @@
         <sprite>sprites\spr_goblinwarrior_attack</sprite>
         <sprite>sprites\spr_goblinattackanimation</sprite>
         <sprite>sprites\spr_goblinwarrior_run</sprite>
+        <sprite>sprites\spr_goblinwarrior_damaged</sprite>
       </sprites>
       <sprites name="Goblin Thief">
         <sprite>sprites\spr_goblinthief</sprite>
         <sprite>sprites\spr_goblinthief_run</sprite>
+        <sprite>sprites\spr_goblinthief_damaged</sprite>
       </sprites>
       <sprites name="Lizard Brute">
         <sprite>sprites\spr_lizard</sprite>
@@ -51,6 +55,7 @@
         <sprite>sprites\spr_lizardbrute_attack</sprite>
         <sprite>sprites\spr_lizardbrute_ragehit</sprite>
         <sprite>sprites\spr_lizardbrute_walk</sprite>
+        <sprite>sprites\spr_lizard_damaged</sprite>
         <sprite>sprites\spr_lizardbrute_idle</sprite>
       </sprites>
       <sprite>sprites\spr_goblingparachute</sprite>
@@ -104,7 +109,6 @@
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_goblintodragon</sprite>
     <sprite>sprites\spr_smoke</sprite>
-    <sprite>sprites\spr_orc_damaged</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -261,8 +265,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
     <room>rooms\test</room>
+    <room>rooms\rm_start</room>
     <room>rooms\rm_lvl1</room>
   </rooms>
   <help>

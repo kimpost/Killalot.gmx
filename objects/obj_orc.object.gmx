@@ -28,16 +28,16 @@
             <string>event_inherited()
 
 //Theese are the ones calling the damaged sprite through csr_enemydamaged
+//Remember the draw event for alpha state
 damaged = false
-
 //for how long is the damaged state active?
 damagedtime = 80
 fadein = false 
 alphavalue = 1
 fadeout = true
-
 //Enter the enemies damage sprite here
 mydamagedsprite = spr_orc_damaged
+//////////////End of damaged state////////////////////
 
 //Own variables
 canmove = true
@@ -315,9 +315,9 @@ event_inherited()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
+            <string>//For the damaged state
 image_alpha = alphavalue
+
 draw_self()
 </string>
           </argument>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>createarms = true
+            <string>event_inherited()
+
+createarms = true
 canshoot = true
 </string>
           </argument>

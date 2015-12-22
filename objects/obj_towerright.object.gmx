@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>6</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_playerparent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = (obj_castleback.x)
+            <string>event_inherited()
+
+x = (obj_castleback.x)
 y = (obj_castleback.y)
 
 instance_create(x+55,y-90,obj_placeballistaorarcher)
