@@ -80,6 +80,7 @@
     <instance objName="obj_goblinarcher" x="1376" y="592" name="inst_BBA5D0D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goblinthief" x="1632" y="576" name="inst_9DB0706D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_goblinarcher" x="256" y="640" name="inst_C42DDBB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_trapstore" x="432" y="736" name="inst_7C2A914D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
