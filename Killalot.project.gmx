@@ -121,6 +121,7 @@
       <script>scripts\scr_lizardidle.gml</script>
       <script>scripts\scr_lizardwalk.gml</script>
       <script>scripts\scr_lizardrun.gml</script>
+      <script>scripts\scr_lizardattack.gml</script>
       <script>scripts\scr_lizardragehit.gml</script>
     </scripts>
     <script>scripts\scr_golddrop.gml</script>
@@ -133,7 +134,6 @@
         <script>scripts\scr_knightrun.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\scr_lizardattack.gml</script>
     <script>scripts\scr_enemydamaged.gml</script>
   </scripts>
   <objects name="objects">

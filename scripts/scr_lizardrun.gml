@@ -17,7 +17,7 @@ if place_meeting(x,y,targetid)
     {
     state = "ragehit"
     sprite_index = spr_lizard
-    if target.blocked != true
+    if targetid.blocked != true
     {targetid.hp += -enraged}
     /*
     with (targetid)

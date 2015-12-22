@@ -29,6 +29,7 @@
 
 //Theese are the ones calling the damaged sprite through csr_enemydamaged
 damaged = false
+
 //for how long is the damaged state active?
 damagedtime = 80
 fadein = false 
